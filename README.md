@@ -1,5 +1,6 @@
 # The best way to store your dotfiles: A bare Git repository
 February 17th 2016   Nicola Paolucci in Tips, Git
+
 https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 
 Disclaimer: the title is slightly hyperbolic, there are other proven solutions to the problem. I do think the technique below is very elegant though.
