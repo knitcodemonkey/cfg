@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/extension.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">src</a> extension.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">71.88% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>23/32</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">25% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">71.88% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>23/32</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import * as vscode from 'vscode'
+import { ProjectWorkspace } from 'jest-editor-support'
+import * as path from 'path'
+&nbsp;
+import { extensionName } from './appGlobals'
+import { pathToJest, pathToConfig } from './helpers'
+import { JestExt } from './JestExt'
+import { IPluginSettings } from './IPluginSettings'
+import { registerStatusBar } from './statusBar'
+import { registerSnapshotCodeLens, registerSnapshotPreview } from './SnapshotCodeLens'
+import { registerCoverageCodeLens } from './Coverage'
+&nbsp;
+let extensionInstance: JestExt
+&nbsp;
+export function activate(context: vscode.ExtensionContext) {
+  // To make us VS Code agnostic outside of this file
+  const pluginSettings = getExtensionSettings()
+  const jestPath = pathToJest(pluginSettings)
+  const configPath = pathToConfig(pluginSettings)
+  const currentJestVersion = 20
+  const workspace = new ProjectWorkspace(pluginSettings.rootPath, jestPath, configPath, currentJestVersion)
+&nbsp;
+  // Create our own console
+  const channel = vscode.window.createOutputChannel('Jest')
+&nbsp;
+  // We need a singleton to represent the extension
+  extensionInstance = new JestExt(workspace, channel, pluginSettings)
+&nbsp;
+  const languages = [
+    { language: 'javascript' },<span class="fstat-no" title="function not covered" ></span>
+    { la<span class="cstat-no" title="statement not covered" >nguage: 'javascriptreact' },</span>
+    { la<span class="cstat-no" title="statement not covered" >nguage: 'typescript' },</span>
+    { language: 'typescriptreact' },<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span>
+  ]<span class="cstat-no" title="statement not covered" ></span>
+  context.subscriptions.push(<span class="fstat-no" title="function not covered" ></span>
+    regi<span class="cstat-no" title="statement not covered" >sterStatusBar(channel),</span>
+    vscode.commands.registerTextEdit<span class="cstat-no" title="statement not covered" >orCommand(`${extensionN</span>ame}.start`, () =&gt; {
+      vscode<span class="cstat-no" title="statement not covered" >.window.showInformationMessage('Started Jest, press escape</span> to hide this message.')
+      extensionInstance.startProcess()
+    }),<span class="fstat-no" title="function not covered" ></span>
+    vsco<span class="cstat-no" title="statement not covered" >de.commands.registerTextEditorCommand(`${extensionNa</span>me}.stop`, () =&gt; extensionInstance.stopProcess()),
+    vscode.commands.registerTextEditorCommand(`${extensionName}.show-channel`, () =&gt; {
+      channel.show()
+    }),
+    ...re<span class="fstat-no" title="function not covered" >gisterSnaps</span>hotCodeLens(pluginSettings.enableSnapshotPreviews),
+<span class="cstat-no" title="statement not covered" >    ...registerSnapshotPreview(),</span>
+    ...registerCoverageCodeLens(extensionInstance),
+    vscode.commands.registerCommand(
+      `${extensionName}.coverage.toggle`,
+      extensionInstance.toggleCoverageOverlay,
+      extensionInstance
+    ),
+    vscode.commands.registerCommand(`${extensionName}.run-test`, extensionInstance.runTest),
+    vscode.languages.registerCodeLensProvider(languages, extensionInstance.debugCodeLensProvider),
+    vscode.workspace.onDidChangeConfiguration(e =&gt; {
+      if (e.affectsConfiguration('jest')) {
+        const updatedSettings = getExtensionSettings()
+        extensionInstance.triggerUpdateSettings(updatedSettings)
+      }
+    }),
+&nbsp;
+    vscode.workspace.onDidCloseTextDocument(document =&gt; {
+      extensionInstance.onDidCloseTextDocument(document)
+    }),
+&nbsp;
+    vscode.window.onDidChangeActiveTextEditor(extensionInstance.onDidChangeActiveTextEditor, extensionInstance),
+    vscode.workspace.onDidChangeTextDocument(extensionInstance.onDidChangeTextDocument, extensionInstance)
+  )
+}
+&nbsp;
+export function deactivate() {
+  extensionInstance.deactivate()
+}
+&nbsp;
+function getExtensionSettings(): IPluginSettings {
+  const config = vscode.workspace.getConfiguration('jest')
+  return {
+    autoEnable: config.get&lt;boolean&gt;('autoEnable'),
+    pathToConfig: config.get&lt;string&gt;('pathToConfig'),
+    pathToJest: config.get&lt;string&gt;('pathToJest'),
+    enableCodeLens: config.get&lt;boolean&gt;('enableCodeLens'),
+    enableInlineErrorMessages: config.get&lt;boolean&gt;('enableInlineErrorMessages'),
+    enableSnapshotPreviews: config.get&lt;boolean&gt;('enableSnapshotPreviews'),
+    enableSnapshotUpdateMessages: config.get&lt;boolean&gt;('enableSnapshotUpdateMessages'),
+    rootPath: path.join(vscode.workspace.rootPath, config.get&lt;string&gt;('rootPath')),
+    runAllTestsFirst: config.get&lt;boolean&gt;('runAllTestsFirst'),
+    showCoverageOnLoad: config.get&lt;boolean&gt;('showCoverageOnLoad'),
+    restartJestOnSnapshotUpdate: config.get&lt;boolean&gt;('restartJestOnSnapshotUpdate'),
+  }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Feb 24 2018 17:01:14 GMT-0500 (EST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+	"name": "theme-darkula",
+	"displayName": "Darkula",
+	"description": "A dark scheme inspired by the IntelliJ Darkula theme.",
+	"version": "1.0.0",
+	"publisher": "alex-pex",
+	"engines": {
+		"vscode": "^1.10.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Darkula",
+				"uiTheme": "vs-dark",
+				"path": "./themes/darkula.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "e6b24b45-1569-413f-95c3-8d177706c581",
+		"publisherId": "3f07db2b-b3af-4cf8-9262-339c170eedd7",
+		"publisherDisplayName": "alex-pex"
+	}
+}

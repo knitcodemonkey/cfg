@@ -1,0 +1,32 @@
+{
+	"name": "theme-nosferatu",
+	"displayName": "Nosferatu",
+	"description": "Fork of Dark-Dracula with some minor changes to better support Python",
+	"version": "1.0.1",
+	"publisher": "dr-rockso",
+	"homepage": "https://github.com/ameily/nosferatu",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ameily/nosferatu.git"
+	},
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Nosferatu",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Nosferatu.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "1257d842-8a8e-40ff-920e-d65285478971",
+		"publisherId": "5d750106-677c-4283-a539-d076c99e7230",
+		"publisherDisplayName": "Adam Meily"
+	}
+}

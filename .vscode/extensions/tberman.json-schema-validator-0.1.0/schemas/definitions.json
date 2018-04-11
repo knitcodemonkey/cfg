@@ -1,0 +1,16 @@
+{
+  "definitions": {
+    "person": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "thing": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    }
+  }
+}

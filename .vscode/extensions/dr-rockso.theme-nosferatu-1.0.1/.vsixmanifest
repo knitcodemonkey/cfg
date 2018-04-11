@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="theme-nosferatu" Version="1.0.1" Publisher="dr-rockso"/>
+    <DisplayName>Nosferatu</DisplayName>
+    <Description xml:space="preserve">Fork of Dark-Dracula with some minor changes to better support Python</Description>
+    <Tags>theme,python</Tags>
+    <Categories>Themes</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Badges></Badges>
+    <Properties>
+      
+        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/ameily/nosferatu.git" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/ameily/nosferatu.git" />
+        
+        <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/ameily/nosferatu.git" />
+        
+      
+      
+      <Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/ameily/nosferatu" />
+      
+      
+    </Properties>
+    
+    
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+  </Assets>
+</PackageManifest>

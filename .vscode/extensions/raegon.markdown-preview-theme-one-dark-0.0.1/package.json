@@ -1,0 +1,41 @@
+{
+	"name": "markdown-preview-theme-one-dark",
+	"displayName": "Markdown Preview Theme - One Dark",
+	"description": "Markdown preview theme based on Atom's One Dark theme",
+	"version": "0.0.1",
+	"publisher": "raegon",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"icon": "icon.png",
+	"contributes": {
+		"markdown.previewStyles": [
+			"./css/onedark.css"
+		]
+	},
+	"keywords": [
+		"atom",
+		"markdown",
+		"theme",
+		"one dark",
+		"preview"
+	],
+	"bugs": {
+		"url": "https://github.com/raycon/vscode-markdown-one-dark/issues",
+		"email": "raegon@gmail.com"
+	},
+	"homepage": "https://github.com/raycon/vscode-markdown-one-dark",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/raycon/vscode-markdown-one-dark"
+	},
+	"__metadata": {
+		"id": "f0a1ed85-82c2-4922-b562-5f4783ac9570",
+		"publisherId": "5fa25980-1c10-46ba-aeb0-4b9d9b143ea1",
+		"publisherDisplayName": "Raegon Kim"
+	}
+}

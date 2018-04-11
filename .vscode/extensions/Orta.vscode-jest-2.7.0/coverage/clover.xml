@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1519509674790" clover="3.2.0">
+  <project timestamp="1519509674790" name="All files">
+    <metrics statements="712" coveredstatements="532" conditionals="236" coveredconditionals="147" methods="164" coveredmethods="108" elements="1112" coveredelements="787" complexity="0" loc="712" ncloc="712" packages="6" files="25" classes="25">
+      <package name="src">
+        <metrics statements="427" coveredstatements="262" conditionals="146" coveredconditionals="62" methods="96" coveredmethods="46"/>
+        <file name="JestExt.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/JestExt.ts">
+          <metrics statements="250" coveredstatements="128" conditionals="95" coveredconditionals="34" methods="50" coveredmethods="24"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="21" count="18" type="stmt"/>
+          <line num="22" count="18" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="26" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="30" count="1" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
+          <line num="32" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="33" count="1" type="stmt"/>
+          <line num="35" count="1" type="stmt"/>
+          <line num="36" count="1" type="stmt"/>
+          <line num="49" count="1" type="stmt"/>
+          <line num="50" count="0" type="stmt"/>
+          <line num="51" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="52" count="0" type="stmt"/>
+          <line num="55" count="1" type="stmt"/>
+          <line num="57" count="18" type="stmt"/>
+          <line num="58" count="18" type="stmt"/>
+          <line num="59" count="18" type="stmt"/>
+          <line num="60" count="18" type="stmt"/>
+          <line num="61" count="18" type="stmt"/>
+          <line num="62" count="18" type="stmt"/>
+          <line num="63" count="18" type="stmt"/>
+          <line num="64" count="18" type="stmt"/>
+          <line num="65" count="18" type="stmt"/>
+          <line num="66" count="18" type="stmt"/>
+          <line num="67" count="18" type="stmt"/>
+          <line num="68" count="18" type="stmt"/>
+          <line num="72" count="18" type="stmt"/>
+          <line num="74" count="18" type="stmt"/>
+          <line num="76" count="18" type="stmt"/>
+          <line num="78" count="18" type="stmt"/>
+          <line num="80" count="18" type="cond" truecount="1" falsecount="1"/>
+          <line num="81" count="0" type="stmt"/>
+          <line num="84" count="18" type="stmt"/>
+          <line num="88" count="0" type="stmt"/>
+          <line num="89" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="90" count="0" type="stmt"/>
+          <line num="95" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="96" count="0" type="stmt"/>
+          <line num="97" count="0" type="stmt"/>
+          <line num="98" count="0" type="stmt"/>
+          <line num="101" count="0" type="stmt"/>
+          <line num="102" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="103" count="0" type="stmt"/>
+          <line num="105" count="0" type="stmt"/>
+          <line num="108" count="0" type="stmt"/>
+          <line num="110" count="0" type="stmt"/>
+          <line num="113" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="114" count="0" type="stmt"/>
+          <line num="117" count="0" type="stmt"/>
+          <line num="119" count="0" type="stmt"/>
+          <line num="122" count="0" type="stmt"/>
+          <line num="125" count="0" type="stmt"/>
+          <line num="129" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="130" count="0" type="stmt"/>
+          <line num="132" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="133" count="0" type="stmt"/>
+          <line num="135" count="0" type="stmt"/>
+          <line num="139" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="140" count="0" type="stmt"/>
+          <line num="141" count="0" type="stmt"/>
+          <line num="142" count="0" type="stmt"/>
+          <line num="143" count="0" type="stmt"/>
+          <line num="146" count="0" type="stmt"/>
+          <line num="147" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="148" count="0" type="stmt"/>
+          <line num="153" count="0" type="stmt"/>
+          <line num="156" count="0" type="stmt"/>
+          <line num="157" count="0" type="stmt"/>
+          <line num="158" count="0" type="stmt"/>
+          <line num="161" count="18" type="stmt"/>
+          <line num="162" count="18" type="cond" truecount="1" falsecount="1"/>
+          <line num="163" count="18" type="stmt"/>
+          <line num="165" count="18" type="stmt"/>
+          <line num="169" count="18" type="stmt"/>
+          <line num="170" count="18" type="stmt"/>
+          <line num="173" count="0" type="stmt"/>
+          <line num="177" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="178" count="0" type="stmt"/>
+          <line num="180" count="0" type="stmt"/>
+          <line num="184" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="185" count="0" type="stmt"/>
+          <line num="186" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="187" count="0" type="stmt"/>
+          <line num="188" count="0" type="stmt"/>
+          <line num="190" count="0" type="stmt"/>
+          <line num="193" count="0" type="stmt"/>
+          <line num="200" count="6" type="stmt"/>
+          <line num="201" count="6" type="cond" truecount="2" falsecount="0"/>
+          <line num="202" count="1" type="stmt"/>
+          <line num="205" count="5" type="stmt"/>
+          <line num="206" count="5" type="stmt"/>
+          <line num="207" count="5" type="stmt"/>
+          <line num="210" count="0" type="stmt"/>
+          <line num="211" count="0" type="stmt"/>
+          <line num="212" count="0" type="stmt"/>
+          <line num="213" count="0" type="stmt"/>
+          <line num="214" count="0" type="stmt"/>
+          <line num="215" count="0" type="stmt"/>
+          <line num="216" count="0" type="stmt"/>
+          <line num="217" count="0" type="stmt"/>
+          <line num="218" count="0" type="stmt"/>
+          <line num="219" count="0" type="stmt"/>
+          <line num="223" count="5" type="stmt"/>
+          <line num="224" count="5" type="stmt"/>
+          <line num="226" count="5" type="stmt"/>
+          <line num="232" count="5" type="stmt"/>
+          <line num="233" count="20" type="stmt"/>
+          <line num="234" count="20" type="stmt"/>
+          <line num="237" count="5" type="stmt"/>
+          <line num="239" count="5" type="stmt"/>
+          <line num="240" count="5" type="cond" truecount="2" falsecount="0"/>
+          <line num="241" count="1" type="stmt"/>
+          <line num="242" count="1" type="stmt"/>
+          <line num="243" count="1" type="stmt"/>
+          <line num="244" count="1" type="stmt"/>
+          <line num="249" count="5" type="cond" truecount="2" falsecount="0"/>
+          <line num="250" count="2" type="stmt"/>
+          <line num="251" count="2" type="stmt"/>
+          <line num="253" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="254" count="1" type="stmt"/>
+          <line num="256" count="2" type="stmt"/>
+          <line num="257" count="2" type="stmt"/>
+          <line num="259" count="2" type="stmt"/>
+          <line num="262" count="1" type="cond" truecount="2" falsecount="0"/>
+          <line num="263" count="1" type="stmt"/>
+          <line num="269" count="1" type="stmt"/>
+          <line num="270" count="1" type="stmt"/>
+          <line num="271" count="1" type="stmt"/>
+          <line num="274" count="1" type="stmt"/>
+          <line num="275" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="276" count="0" type="stmt"/>
+          <line num="278" count="1" type="stmt"/>
+          <line num="279" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="280" count="1" type="stmt"/>
+          <line num="282" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="283" count="0" type="stmt"/>
+          <line num="285" count="0" type="stmt"/>
+          <line num="286" count="0" type="stmt"/>
+          <line num="289" count="0" type="stmt"/>
+          <line num="290" count="0" type="stmt"/>
+          <line num="291" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="292" count="0" type="stmt"/>
+          <line num="293" count="0" type="stmt"/>
+          <line num="294" count="0" type="stmt"/>
+          <line num="296" count="0" type="stmt"/>
+          <line num="297" count="0" type="stmt"/>
+          <line num="299" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="300" count="0" type="stmt"/>
+          <line num="302" count="0" type="stmt"/>
+          <line num="303" count="0" type="stmt"/>
+          <line num="304" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="307" count="18" type="stmt"/>
+          <line num="310" count="18" type="stmt"/>
+          <line num="311" count="18" type="stmt"/>
+          <line num="312" count="18" type="stmt"/>
+          <line num="313" count="18" type="stmt"/>
+          <line num="317" count="0" type="stmt"/>
+          <line num="320" count="0" type="stmt"/>
+          <line num="321" count="0" type="stmt"/>
+          <line num="324" count="0" type="stmt"/>
+          <line num="325" count="0" type="stmt"/>
+          <line num="326" count="0" type="stmt"/>
+          <line num="327" count="0" type="stmt"/>
+          <line num="328" count="0" type="stmt"/>
+          <line num="329" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="330" count="0" type="stmt"/>
+          <line num="333" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="335" count="0" type="stmt"/>
+          <line num="336" count="0" type="stmt"/>
+          <line num="338" count="0" type="stmt"/>
+          <line num="341" count="20" type="stmt"/>
+          <line num="347" count="20" type="stmt"/>
+          <line num="348" count="1" type="stmt"/>
+          <line num="366" count="0" type="stmt"/>
+          <line num="369" count="18" type="stmt"/>
+          <line num="370" count="18" type="stmt"/>
+          <line num="371" count="18" type="cond" truecount="1" falsecount="1"/>
+          <line num="372" count="0" type="stmt"/>
+          <line num="373" count="0" type="stmt"/>
+          <line num="374" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="375" count="0" type="stmt"/>
+          <line num="378" count="18" type="stmt"/>
+          <line num="384" count="0" type="stmt"/>
+          <line num="385" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="386" count="0" type="stmt"/>
+          <line num="388" count="0" type="stmt"/>
+          <line num="389" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="391" count="0" type="stmt"/>
+          <line num="404" count="0" type="stmt"/>
+          <line num="405" count="0" type="stmt"/>
+          <line num="406" count="0" type="stmt"/>
+          <line num="428" count="0" type="stmt"/>
+          <line num="429" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="431" count="0" type="stmt"/>
+          <line num="434" count="0" type="stmt"/>
+          <line num="435" count="0" type="stmt"/>
+          <line num="436" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="437" count="0" type="stmt"/>
+          <line num="439" count="0" type="stmt"/>
+          <line num="442" count="0" type="stmt"/>
+          <line num="446" count="0" type="stmt"/>
+          <line num="447" count="0" type="stmt"/>
+          <line num="450" count="0" type="stmt"/>
+          <line num="451" count="0" type="stmt"/>
+          <line num="454" count="4" type="stmt"/>
+          <line num="455" count="4" type="stmt"/>
+          <line num="458" count="6" type="cond" truecount="4" falsecount="0"/>
+          <line num="459" count="3" type="stmt"/>
+          <line num="461" count="3" type="stmt"/>
+          <line num="462" count="3" type="stmt"/>
+          <line num="465" count="2" type="cond" truecount="4" falsecount="0"/>
+          <line num="466" count="1" type="stmt"/>
+          <line num="468" count="1" type="stmt"/>
+          <line num="471" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="472" count="1" type="stmt"/>
+          <line num="474" count="1" type="stmt"/>
+          <line num="482" count="5" type="cond" truecount="2" falsecount="0"/>
+          <line num="483" count="1" type="stmt"/>
+          <line num="485" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="486" count="1" type="stmt"/>
+          <line num="489" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="490" count="1" type="stmt"/>
+          <line num="492" count="2" type="stmt"/>
+          <line num="493" count="2" type="stmt"/>
+          <line num="494" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="495" count="1" type="stmt"/>
+          <line num="500" count="1" type="stmt"/>
+          <line num="503" count="1" type="stmt"/>
+        </file>
+        <file name="TestParser.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/TestParser.ts">
+          <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+          <line num="2" count="6" type="stmt"/>
+          <line num="3" count="6" type="stmt"/>
+          <line num="4" count="6" type="stmt"/>
+          <line num="6" count="5" type="stmt"/>
+          <line num="7" count="5" type="cond" truecount="2" falsecount="0"/>
+          <line num="9" count="6" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+          <line num="14" count="6" type="stmt"/>
+        </file>
+        <file name="appGlobals.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/appGlobals.ts">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="2" count="3" type="stmt"/>
+          <line num="3" count="3" type="stmt"/>
+        </file>
+        <file name="decorations.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/decorations.ts">
+          <metrics statements="12" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="23" count="2" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="43" count="2" type="stmt"/>
+          <line num="45" count="1" type="stmt"/>
+          <line num="63" count="2" type="stmt"/>
+          <line num="65" count="1" type="stmt"/>
+          <line num="83" count="2" type="stmt"/>
+          <line num="85" count="0" type="stmt"/>
+          <line num="104" count="2" type="stmt"/>
+        </file>
+        <file name="diagnostics.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/diagnostics.ts">
+          <metrics statements="39" coveredstatements="36" conditionals="13" coveredconditionals="10" methods="11" coveredmethods="9"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="8" count="2" type="stmt"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="12" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="17" count="10" type="stmt"/>
+          <line num="18" count="7" type="stmt"/>
+          <line num="20" count="10" type="cond" truecount="2" falsecount="0"/>
+          <line num="21" count="7" type="stmt"/>
+          <line num="24" count="3" type="stmt"/>
+          <line num="25" count="3" type="stmt"/>
+          <line num="27" count="10" type="stmt"/>
+          <line num="28" count="10" type="cond" truecount="3" falsecount="0"/>
+          <line num="29" count="10" type="stmt"/>
+          <line num="30" count="10" type="stmt"/>
+          <line num="33" count="7" type="stmt"/>
+          <line num="34" count="10" type="stmt"/>
+          <line num="35" count="10" type="cond" truecount="2" falsecount="0"/>
+          <line num="37" count="8" type="cond" truecount="2" falsecount="0"/>
+          <line num="38" count="1" type="stmt"/>
+          <line num="41" count="7" type="stmt"/>
+          <line num="43" count="8" type="stmt"/>
+          <line num="45" count="2" type="stmt"/>
+          <line num="46" count="2" type="stmt"/>
+          <line num="50" count="7" type="stmt"/>
+          <line num="51" count="7" type="stmt"/>
+          <line num="52" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="53" count="0" type="stmt"/>
+          <line num="56" count="7" type="stmt"/>
+          <line num="57" count="0" type="stmt"/>
+          <line num="60" count="2" type="stmt"/>
+          <line num="62" count="1" type="stmt"/>
+          <line num="64" count="2" type="stmt"/>
+          <line num="66" count="1" type="stmt"/>
+          <line num="67" count="7" type="stmt"/>
+          <line num="68" count="1" type="stmt"/>
+          <line num="70" count="2" type="stmt"/>
+        </file>
+        <file name="editor.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/editor.ts">
+          <metrics statements="14" coveredstatements="14" conditionals="13" coveredconditionals="12" methods="2" coveredmethods="2"/>
+          <line num="2" count="4" type="stmt"/>
+          <line num="3" count="4" type="stmt"/>
+          <line num="5" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="7" count="4" type="stmt"/>
+          <line num="9" count="4" type="cond" truecount="4" falsecount="0"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="13" count="3" type="stmt"/>
+          <line num="14" count="3" type="cond" truecount="4" falsecount="1"/>
+          <line num="15" count="3" type="stmt"/>
+          <line num="17" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="21" count="3" type="stmt"/>
+          <line num="23" count="4" type="stmt"/>
+        </file>
+        <file name="extension.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/extension.ts">
+          <metrics statements="32" coveredstatements="23" conditionals="2" coveredconditionals="0" methods="8" coveredmethods="2"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="15" count="3" type="stmt"/>
+          <line num="16" count="3" type="stmt"/>
+          <line num="17" count="3" type="stmt"/>
+          <line num="18" count="3" type="stmt"/>
+          <line num="19" count="3" type="stmt"/>
+          <line num="21" count="3" type="stmt"/>
+          <line num="23" count="3" type="stmt"/>
+          <line num="24" count="3" type="stmt"/>
+          <line num="30" count="3" type="stmt"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="33" count="0" type="stmt"/>
+          <line num="34" count="0" type="stmt"/>
+          <line num="36" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="37" count="0" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="41" count="0" type="stmt"/>
+          <line num="44" count="1" type="stmt"/>
+          <line num="46" count="0" type="stmt"/>
+          <line num="48" count="1" type="stmt"/>
+          <line num="50" count="3" type="stmt"/>
+          <line num="51" count="3" type="stmt"/>
+        </file>
+        <file name="helpers.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/helpers.ts">
+          <metrics statements="43" coveredstatements="23" conditionals="17" coveredconditionals="4" methods="9" coveredmethods="3"/>
+          <line num="2" count="4" type="stmt"/>
+          <line num="3" count="4" type="stmt"/>
+          <line num="4" count="4" type="stmt"/>
+          <line num="5" count="4" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="14" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="16" count="0" type="stmt"/>
+          <line num="18" count="0" type="stmt"/>
+          <line num="20" count="4" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+          <line num="26" count="0" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="28" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="37" count="0" type="stmt"/>
+          <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="41" count="0" type="stmt"/>
+          <line num="42" count="0" type="stmt"/>
+          <line num="50" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="51" count="0" type="stmt"/>
+          <line num="53" count="0" type="stmt"/>
+          <line num="55" count="4" type="stmt"/>
+          <line num="57" count="8" type="stmt"/>
+          <line num="58" count="8" type="cond" truecount="2" falsecount="0"/>
+          <line num="59" count="7" type="stmt"/>
+          <line num="60" count="7" type="stmt"/>
+          <line num="61" count="7" type="stmt"/>
+          <line num="63" count="8" type="stmt"/>
+          <line num="64" count="8" type="stmt"/>
+          <line num="65" count="8" type="stmt"/>
+          <line num="66" count="8" type="stmt"/>
+          <line num="67" count="8" type="stmt"/>
+          <line num="68" count="19" type="cond" truecount="2" falsecount="0"/>
+          <line num="69" count="5" type="stmt"/>
+          <line num="72" count="3" type="stmt"/>
+          <line num="74" count="4" type="stmt"/>
+          <line num="76" count="7" type="stmt"/>
+          <line num="82" count="2" type="stmt"/>
+          <line num="84" count="4" type="stmt"/>
+        </file>
+        <file name="statusBar.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/statusBar.ts">
+          <metrics statements="26" coveredstatements="16" conditionals="4" coveredconditionals="0" methods="9" coveredmethods="0"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="8" count="2" type="stmt"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="10" count="2" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="17" count="2" type="stmt"/>
+          <line num="19" count="0" type="stmt"/>
+          <line num="21" count="2" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+          <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="28" count="2" type="stmt"/>
+          <line num="30" count="0" type="stmt"/>
+          <line num="32" count="2" type="stmt"/>
+          <line num="34" count="0" type="stmt"/>
+          <line num="36" count="2" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="40" count="2" type="stmt"/>
+          <line num="42" count="0" type="stmt"/>
+          <line num="43" count="0" type="cond" truecount="0" falsecount="2"/>
+        </file>
+      </package>
+      <package name="src.Coverage">
+        <metrics statements="51" coveredstatements="39" conditionals="11" coveredconditionals="7" methods="15" coveredmethods="11"/>
+        <file name="CoverageCodeLensProvider.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/Coverage/CoverageCodeLensProvider.ts">
+          <metrics statements="15" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="17" count="0" type="stmt"/>
+          <line num="19" count="0" type="stmt"/>
+          <line num="20" count="0" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="22" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="24" count="0" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+          <line num="29" count="0" type="stmt"/>
+        </file>
+        <file name="CoverageMapProvider.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/Coverage/CoverageMapProvider.ts">
+          <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+          <line num="2" count="3" type="stmt"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
+          <line num="7" count="7" type="stmt"/>
+          <line num="8" count="7" type="stmt"/>
+          <line num="11" count="3" type="stmt"/>
+          <line num="14" count="4" type="stmt"/>
+          <line num="15" count="4" type="stmt"/>
+          <line num="16" count="4" type="stmt"/>
+          <line num="19" count="2" type="stmt"/>
+          <line num="22" count="3" type="stmt"/>
+        </file>
+        <file name="CoverageOverlay.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/Coverage/CoverageOverlay.ts">
+          <metrics statements="20" coveredstatements="20" conditionals="5" coveredconditionals="5" methods="6" coveredmethods="6"/>
+          <line num="2" count="3" type="stmt"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
+          <line num="5" count="3" type="stmt"/>
+          <line num="8" count="13" type="stmt"/>
+          <line num="9" count="13" type="stmt"/>
+          <line num="12" count="6" type="stmt"/>
+          <line num="15" count="2" type="stmt"/>
+          <line num="16" count="2" type="stmt"/>
+          <line num="19" count="3" type="stmt"/>
+          <line num="20" count="3" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="24" count="3" type="stmt"/>
+          <line num="28" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="29" count="1" type="stmt"/>
+          <line num="31" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="32" count="1" type="stmt"/>
+          <line num="35" count="1" type="stmt"/>
+          <line num="39" count="3" type="stmt"/>
+          <line num="40" count="3" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/Coverage/index.ts">
+          <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+          <line num="3" count="9" type="cond" truecount="2" falsecount="0"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="8" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.Coverage.Formatters">
+        <metrics statements="38" coveredstatements="38" conditionals="12" coveredconditionals="12" methods="9" coveredmethods="9"/>
+        <file name="AbstractFormatter.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/Coverage/Formatters/AbstractFormatter.ts">
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="2" count="4" type="stmt"/>
+          <line num="5" count="11" type="stmt"/>
+          <line num="8" count="4" type="stmt"/>
+        </file>
+        <file name="DefaultFormatter.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/Coverage/Formatters/DefaultFormatter.ts">
+          <metrics statements="30" coveredstatements="30" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
+          <line num="2" count="4" type="stmt"/>
+          <line num="3" count="4" type="stmt"/>
+          <line num="4" count="4" type="stmt"/>
+          <line num="5" count="4" type="stmt"/>
+          <line num="8" count="4" type="stmt"/>
+          <line num="9" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="13" count="3" type="stmt"/>
+          <line num="16" count="4" type="stmt"/>
+          <line num="17" count="4" type="stmt"/>
+          <line num="18" count="4" type="stmt"/>
+          <line num="19" count="5" type="cond" truecount="2" falsecount="0"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="22" count="4" type="stmt"/>
+          <line num="23" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="24" count="1" type="stmt"/>
+          <line num="26" count="3" type="stmt"/>
+          <line num="29" count="4" type="stmt"/>
+          <line num="32" count="2" type="stmt"/>
+          <line num="33" count="2" type="stmt"/>
+          <line num="34" count="2" type="stmt"/>
+          <line num="35" count="4" type="stmt"/>
+          <line num="36" count="4" type="stmt"/>
+          <line num="38" count="2" type="stmt"/>
+          <line num="41" count="1" type="stmt"/>
+          <line num="42" count="1" type="stmt"/>
+          <line num="45" count="4" type="stmt"/>
+          <line num="46" count="4" type="stmt"/>
+          <line num="51" count="4" type="stmt"/>
+        </file>
+        <file name="helpers.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/Coverage/Formatters/helpers.ts">
+          <metrics statements="5" coveredstatements="5" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+          <line num="2" count="5" type="stmt"/>
+          <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="6" count="5" type="stmt"/>
+          <line num="8" count="11" type="cond" truecount="4" falsecount="0"/>
+          <line num="10" count="5" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.DebugCodeLens">
+        <metrics statements="39" coveredstatements="39" conditionals="10" coveredconditionals="10" methods="8" coveredmethods="8"/>
+        <file name="DebugCodeLens.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/DebugCodeLens/DebugCodeLens.ts">
+          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="6" count="6" type="stmt"/>
+          <line num="7" count="6" type="stmt"/>
+          <line num="8" count="6" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+        </file>
+        <file name="DebugCodeLensProvider.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/DebugCodeLens/DebugCodeLensProvider.ts">
+          <metrics statements="33" coveredstatements="33" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="11" count="21" type="stmt"/>
+          <line num="12" count="21" type="stmt"/>
+          <line num="13" count="21" type="stmt"/>
+          <line num="16" count="5" type="stmt"/>
+          <line num="19" count="2" type="stmt"/>
+          <line num="20" count="2" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="26" count="8" type="stmt"/>
+          <line num="27" count="8" type="cond" truecount="4" falsecount="0"/>
+          <line num="28" count="2" type="stmt"/>
+          <line num="30" count="6" type="stmt"/>
+          <line num="31" count="6" type="stmt"/>
+          <line num="32" count="6" type="stmt"/>
+          <line num="33" count="6" type="stmt"/>
+          <line num="34" count="5" type="cond" truecount="4" falsecount="0"/>
+          <line num="35" count="2" type="stmt"/>
+          <line num="37" count="3" type="stmt"/>
+          <line num="38" count="3" type="stmt"/>
+          <line num="39" count="3" type="stmt"/>
+          <line num="40" count="3" type="stmt"/>
+          <line num="42" count="6" type="stmt"/>
+          <line num="45" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="46" count="2" type="stmt"/>
+          <line num="52" count="3" type="stmt"/>
+          <line num="55" count="1" type="stmt"/>
+          <line num="58" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.JestProcessManagement">
+        <metrics statements="76" coveredstatements="75" conditionals="25" coveredconditionals="25" methods="23" coveredmethods="22"/>
+        <file name="JestProcess.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/JestProcessManagement/JestProcess.ts">
+          <metrics statements="40" coveredstatements="39" conditionals="12" coveredconditionals="12" methods="9" coveredmethods="8"/>
+          <line num="2" count="3" type="stmt"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
+          <line num="7" count="34" type="stmt"/>
+          <line num="8" count="34" type="stmt"/>
+          <line num="9" count="34" type="stmt"/>
+          <line num="10" count="34" type="cond" truecount="2" falsecount="0"/>
+          <line num="11" count="34" type="stmt"/>
+          <line num="12" count="34" type="stmt"/>
+          <line num="15" count="56" type="stmt"/>
+          <line num="16" count="56" type="stmt"/>
+          <line num="19" count="56" type="stmt"/>
+          <line num="20" count="56" type="stmt"/>
+          <line num="21" count="56" type="stmt"/>
+          <line num="22" count="56" type="stmt"/>
+          <line num="23" count="56" type="stmt"/>
+          <line num="24" count="33" type="cond" truecount="2" falsecount="0"/>
+          <line num="25" count="31" type="stmt"/>
+          <line num="26" count="31" type="cond" truecount="2" falsecount="0"/>
+          <line num="27" count="22" type="stmt"/>
+          <line num="28" count="22" type="stmt"/>
+          <line num="30" count="9" type="cond" truecount="2" falsecount="0"/>
+          <line num="31" count="7" type="stmt"/>
+          <line num="32" count="7" type="cond" truecount="2" falsecount="0"/>
+          <line num="33" count="1" type="stmt"/>
+          <line num="40" count="56" type="stmt"/>
+          <line num="41" count="3" type="stmt"/>
+          <line num="45" count="14" type="stmt"/>
+          <line num="48" count="7" type="stmt"/>
+          <line num="49" count="7" type="stmt"/>
+          <line num="50" count="7" type="stmt"/>
+          <line num="53" count="4" type="stmt"/>
+          <line num="54" count="4" type="stmt"/>
+          <line num="55" count="4" type="stmt"/>
+          <line num="56" count="4" type="stmt"/>
+          <line num="57" count="4" type="stmt"/>
+          <line num="58" count="4" type="stmt"/>
+          <line num="62" count="0" type="stmt"/>
+          <line num="65" count="3" type="stmt"/>
+          <line num="66" count="3" type="stmt"/>
+        </file>
+        <file name="JestProcessManager.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/JestProcessManagement/JestProcessManager.ts">
+          <metrics statements="31" coveredstatements="31" conditionals="13" coveredconditionals="13" methods="14" coveredmethods="14"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="6" count="30" type="stmt"/>
+          <line num="7" count="30" type="stmt"/>
+          <line num="8" count="30" type="stmt"/>
+          <line num="11" count="18" type="stmt"/>
+          <line num="12" count="18" type="cond" truecount="2" falsecount="0"/>
+          <line num="13" count="12" type="stmt"/>
+          <line num="17" count="34" type="stmt"/>
+          <line num="22" count="34" type="stmt"/>
+          <line num="23" count="34" type="stmt"/>
+          <line num="24" count="34" type="stmt"/>
+          <line num="27" count="25" type="stmt"/>
+          <line num="31" count="9" type="stmt"/>
+          <line num="32" count="9" type="cond" truecount="2" falsecount="0"/>
+          <line num="33" count="6" type="stmt"/>
+          <line num="39" count="9" type="stmt"/>
+          <line num="50" count="25" type="cond" truecount="4" falsecount="0"/>
+          <line num="51" count="9" type="stmt"/>
+          <line num="52" count="9" type="stmt"/>
+          <line num="53" count="9" type="stmt"/>
+          <line num="58" count="9" type="stmt"/>
+          <line num="62" count="16" type="stmt"/>
+          <line num="70" count="2" type="stmt"/>
+          <line num="71" count="2" type="stmt"/>
+          <line num="72" count="2" type="stmt"/>
+          <line num="73" count="2" type="stmt"/>
+          <line num="77" count="3" type="stmt"/>
+          <line num="78" count="3" type="stmt"/>
+          <line num="81" count="10" type="stmt"/>
+          <line num="84" count="2" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/JestProcessManagement/index.ts">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.TestResults">
+        <metrics statements="81" coveredstatements="79" conditionals="32" coveredconditionals="31" methods="13" coveredmethods="12"/>
+        <file name="TestReconciliationState.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/TestResults/TestReconciliationState.ts">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="2" count="5" type="stmt"/>
+          <line num="3" count="5" type="stmt"/>
+        </file>
+        <file name="TestResult.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/TestResults/TestResult.ts">
+          <metrics statements="31" coveredstatements="31" conditionals="12" coveredconditionals="12" methods="6" coveredmethods="6"/>
+          <line num="2" count="6" type="stmt"/>
+          <line num="3" count="6" type="stmt"/>
+          <line num="12" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="13" count="2" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="17" count="6" type="stmt"/>
+          <line num="19" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="22" count="3" type="stmt"/>
+          <line num="23" count="3" type="stmt"/>
+          <line num="24" count="3" type="stmt"/>
+          <line num="25" count="2" type="stmt"/>
+          <line num="26" count="2" type="stmt"/>
+          <line num="28" count="3" type="stmt"/>
+          <line num="30" count="6" type="stmt"/>
+          <line num="32" count="2" type="stmt"/>
+          <line num="33" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="34" count="1" type="stmt"/>
+          <line num="36" count="1" type="stmt"/>
+          <line num="39" count="5" type="cond" truecount="2" falsecount="0"/>
+          <line num="40" count="3" type="stmt"/>
+          <line num="42" count="2" type="stmt"/>
+          <line num="44" count="6" type="stmt"/>
+          <line num="46" count="2" type="stmt"/>
+          <line num="47" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="48" count="1" type="stmt"/>
+          <line num="50" count="1" type="stmt"/>
+          <line num="53" count="6" type="stmt"/>
+          <line num="54" count="6" type="cond" truecount="2" falsecount="0"/>
+          <line num="55" count="3" type="stmt"/>
+          <line num="58" count="6" type="stmt"/>
+        </file>
+        <file name="TestResultProvider.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/TestResults/TestResultProvider.ts">
+          <metrics statements="41" coveredstatements="39" conditionals="18" coveredconditionals="17" methods="6" coveredmethods="5"/>
+          <line num="2" count="6" type="stmt"/>
+          <line num="3" count="6" type="stmt"/>
+          <line num="4" count="6" type="stmt"/>
+          <line num="5" count="6" type="stmt"/>
+          <line num="8" count="8" type="stmt"/>
+          <line num="9" count="8" type="stmt"/>
+          <line num="12" count="9" type="stmt"/>
+          <line num="13" count="9" type="stmt"/>
+          <line num="16" count="5" type="cond" truecount="2" falsecount="0"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="19" count="4" type="stmt"/>
+          <line num="20" count="4" type="cond" truecount="1" falsecount="1"/>
+          <line num="21" count="4" type="stmt"/>
+          <line num="22" count="4" type="stmt"/>
+          <line num="23" count="2" type="stmt"/>
+          <line num="24" count="2" type="stmt"/>
+          <line num="26" count="4" type="stmt"/>
+          <line num="27" count="4" type="stmt"/>
+          <line num="28" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="30" count="3" type="stmt"/>
+          <line num="46" count="4" type="stmt"/>
+          <line num="47" count="4" type="stmt"/>
+          <line num="50" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="51" count="1" type="stmt"/>
+          <line num="53" count="2" type="stmt"/>
+          <line num="59" count="2" type="stmt"/>
+          <line num="60" count="2" type="stmt"/>
+          <line num="61" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="62" count="1" type="stmt"/>
+          <line num="64" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="65" count="1" type="stmt"/>
+          <line num="67" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="68" count="1" type="stmt"/>
+          <line num="71" count="1" type="stmt"/>
+          <line num="74" count="2" type="stmt"/>
+          <line num="75" count="2" type="stmt"/>
+          <line num="78" count="2" type="stmt"/>
+          <line num="79" count="2" type="stmt"/>
+          <line num="82" count="0" type="stmt"/>
+          <line num="83" count="0" type="stmt"/>
+          <line num="86" count="6" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/orta/dev/projects/vscode/vscode-jest/src/TestResults/index.ts">
+          <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+          <line num="3" count="17" type="cond" truecount="2" falsecount="0"/>
+          <line num="5" count="5" type="stmt"/>
+          <line num="6" count="5" type="stmt"/>
+          <line num="7" count="5" type="stmt"/>
+          <line num="8" count="5" type="stmt"/>
+          <line num="9" count="5" type="stmt"/>
+          <line num="10" count="5" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>

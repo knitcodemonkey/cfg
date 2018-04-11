@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/helpers.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">src</a> helpers.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">51.11% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>23/45</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">23.53% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">53.49% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>23/43</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { platform } from 'os'
+import { existsSync, readFileSync } from 'fs'
+import { normalize, join } from 'path'
+&nbsp;
+import { IPluginSettings } from './IPluginSettings'
+&nbsp;
+/**
+ *  Handles getting the jest runner, handling the OS and project specific work too
+ *
+ * @returns {string}
+ */<span class="fstat-no" title="function not covered" ></span>
+export function p<span class="cstat-no" title="statement not covered" >athToJest(pluginSettings: IPluginSettings) {</span>
+  const path = normalize<span class="cstat-no" title="statement not covered" >(pluginSettings.pathToJest)</span>
+<span class="cstat-no" title="statement not covered" ></span>
+  const defaultPath = normalize('node_modules/.bin/jest')
+  if (pa<span class="cstat-no" title="statement not covered" >th === defaultPath &amp;&amp; </span>isBootstrappedWithCreateReactApp(pluginSettings.rootPath)) {
+    // If it's the default, run the script instead
+<span class="cstat-no" title="statement not covered" >    return 'npm t</span>est --'
+  }
+&nbsp;
+  return <span class="fstat-no" title="function not covered" >path</span>
+}
+<span class="cstat-no" title="statement not covered" ></span>
+function isBootstrappedWithCreateReactApp(rootPath: string): boolean {
+  //<span class="cstat-no" title="statement not covered" > Known binary names of `react-scripts` forks:</span>
+  const packageBinaryNames =<span class="cstat-no" title="statement not covered" > ['react-scripts', 'react-native-scrip</span>ts', 'react-scripts-ts', 'react-app-rewired']
+  // If possible, try to par<span class="cstat-no" title="statement not covered" >se `package.json` and look for known binary beeing </span>called in `scripts.test`
+  try {<span class="cstat-no" title="statement not covered" ></span>
+    const pa<span class="cstat-no" title="statement not covered" >ckagePath = jo</span>in(rootPath, 'package.json')
+    const packageJSON = JSON.parse(readFileSync(packagePath, 'utf8'))
+    if (!packageJSON || !pac<span class="cstat-no" title="statement not covered" >kageJSON.scripts || !pack</span>ageJSON.scripts.test) {
+      re<span class="cstat-no" title="statement not covered" >turn false<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span>
+    }
+    const testCommand = packageJSON.scripts.test as string
+    return packageBinaryNames.some(binary =&gt; testCommand.indexOf(binary + ' test ') === 0)
+  } catch {}
+  //<span class="cstat-no" title="statement not covered" > In case parsing `package.json`<span class="fstat-no" title="function not covered" > f</span>ailed or<span class="cstat-no" title="statement not covered" > was unconclusive,</span></span>
+  // fallback to checking for the presence of the binaries in `./node_modules/.bin`
+  return <span class="fstat-no" title="function not covered" >packageBinaryNames</span>.some(binary =&gt; hasNodeExecutable(rootPath, binary))
+}<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" ></span>
+func<span class="cstat-no" title="statement not covered" >tion hasNodeExecutable(rootPath: strin</span>g, executable: string): boolean {
+  const ext = platform() === 'win32' ? '.cmd' : ''
+  const absolutePath = join(rootPath, 'node_modules', '.bin', executable + ext)
+  return existsSync(absolutePath)
+}
+&nbsp;
+/**
+ * Handle<span class="fstat-no" title="function not covered" >s getting the</span> path to config file
+ *<span class="cstat-no" title="statement not covered" ></span>
+ * @retu<span class="cstat-no" title="statement not covered" >rns {string}</span>
+ */
+expo<span class="cstat-no" title="statement not covered" >rt function</span> pathToConfig(pluginSettings: IPluginSettings) {
+  if (pluginSettings.pathToConfig !== '') {
+    return normalize(pluginSettings.pathToConfig)
+  }
+&nbsp;
+  return ''
+}
+&nbsp;
+export function pathToJestPackageJSON(pluginSettings: IPluginSettings): string | null {
+  let pathToNodeModules = join(pluginSettings.rootPath, 'node_modules')
+&nbsp;
+  if (pluginSettings.pathToJest) {
+    const relativeJestCmd = removeSurroundingQuotes(pluginSettings.pathToJest.split(' ')[0])
+    const relativePathToNodeModules = relativeJestCmd.replace(/node_modules.+$/i, 'node_modules')
+&nbsp;
+    pathToNodeModules = join(pluginSettings.rootPath, relativePathToNodeModules)
+  }
+&nbsp;
+  const defaultPath = normalize(join(pathToNodeModules, 'jest/package.json'))
+  const cliPath = normalize(join(pathToNodeModules, 'jest-cli/package.json'))
+  const craPath = normalize(join(pathToNodeModules, 'react-scripts/node_modules/jest/package.json'))
+  const paths = [defaultPath, cliPath, craPath]
+&nbsp;
+  for (const i in paths) {
+    if (existsSync(paths[i])) {
+      return paths[i]
+    }
+  }
+&nbsp;
+  return null
+}
+&nbsp;
+function removeSurroundingQuotes(str) {
+  return str.replace(/^['"`]/, '').replace(/['"`]$/, '')
+}
+&nbsp;
+/**
+ *  Taken From https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+ */
+export function escapeRegExp(str: string): string {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&amp;') // $&amp; means the whole matched string
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Feb 24 2018 17:01:14 GMT-0500 (EST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

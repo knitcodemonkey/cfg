@@ -1,0 +1,145 @@
+{
+	"name": "better-comments",
+	"displayName": "Better Comments",
+	"icon": "icon.png",
+	"description": "Improve your code commenting by annotating with alert, informational, TODOs, and more!",
+	"version": "1.2.1",
+	"publisher": "aaron-bond",
+	"author": {
+		"name": "Aaron Bond"
+	},
+	"homepage": "https://github.com/aaron-bond/better-comments/blob/master/README.md",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aaron-bond/better-comments"
+	},
+	"bugs": "https://github.com/aaron-bond/better-comments/issues",
+	"categories": [
+		"Formatters"
+	],
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"activationEvents": [
+		"onLanguage:ada",
+		"onLanguage:c",
+		"onLanguage:clojure",
+		"onLanguage:coffeescript",
+		"onLanguage:cpp",
+		"onLanguage:csharp",
+		"onLanguage:css",
+		"onLanguage:dockerfile",
+		"onLanguage:elixir",
+		"onLanguage:erlang",
+		"onLanguage:fsharp",
+		"onLanguage:go",
+		"onLanguage:graphql",
+		"onLanguage:groovy",
+		"onLanguage:haskell",
+		"onLanguage:haxe",
+		"onLanguage:kotlin",
+		"onLanguage:java",
+		"onLanguage:javascript",
+		"onLanguage:javascriptreact",
+		"onLanguage:julia",
+		"onLanguage:latex",
+		"onLanguage:less",
+		"onLanguage:lisp",
+		"onLanguage:lua",
+		"onLanguage:makefile",
+		"onLanguage:objective-c",
+		"onLanguage:objective-cpp",
+		"onLanguage:objectpascal",
+		"onLanguage:pascal",
+		"onLanguage:perl",
+		"onLanguage:perl6",
+		"onLanguage:plsql",
+		"onLanguage:php",
+		"onLanguage:powershell",
+		"onLanguage:python",
+		"onLanguage:r",
+		"onLanguage:racket",
+		"onLanguage:ruby",
+		"onLanguage:rust",
+		"onLanguage:scala",
+		"onLanguage:scss",
+		"onLanguage:sass",
+		"onLanguage:shaderlab",
+		"onLanguage:shellscript",
+		"onLanguage:sql",
+		"onLanguage:swift",
+		"onLanguage:terraform",
+		"onLanguage:typescript",
+		"onLanguage:vb",
+		"onLanguage:yaml"
+	],
+	"galleryBanner": {
+		"color": "#e3f4ff",
+		"theme": "light"
+	},
+	"main": "./out/extension",
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"contributes": {
+		"configuration": {
+			"title": "Better Comments configuration",
+			"properties": {
+				"better-comments.multilineComments": {
+					"type": "boolean",
+					"description": "Whether the multiline comment highlighter should be active",
+					"default": true
+				},
+				"better-comments.tags": {
+					"type": "array",
+					"description": "Tags which are used to color the comments. Changes require a restart of VS Code to take effect",
+					"default": [
+						{
+							"tag": "!",
+							"color": "#FF2D00",
+							"strikethrough": false
+						},
+						{
+							"tag": "?",
+							"color": "#3498DB",
+							"strikethrough": false
+						},
+						{
+							"tag": "//",
+							"color": "#474747",
+							"strikethrough": true
+						},
+						{
+							"tag": "todo",
+							"color": "#FF8C00",
+							"strikethrough": false
+						},
+						{
+							"tag": "*",
+							"color": "#98C379",
+							"strikethrough": false
+						}
+					]
+				}
+			}
+		}
+	},
+	"devDependencies": {
+		"typescript": "^2.6.1",
+		"vsce": "^1.22.0",
+		"vscode": "^1.1.6",
+		"mocha": "^2.3.3",
+		"@types/node": "^7.0.43",
+		"@types/mocha": "^2.2.42"
+	},
+	"__metadata": {
+		"id": "7a0110bb-231a-4598-aa1b-0769ea46d28b",
+		"publisherId": "02145bab-b083-4d1e-b8ec-08d7abdd68da",
+		"publisherDisplayName": "Aaron Bond"
+	}
+}

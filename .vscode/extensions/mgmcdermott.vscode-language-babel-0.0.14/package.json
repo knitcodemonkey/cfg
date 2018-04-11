@@ -1,0 +1,149 @@
+{
+	"name": "vscode-language-babel",
+	"displayName": "Babel JavaScript",
+	"description": "VSCode syntax highlighting for today's JavaScript, ported from gandm's language-babel for Atom.",
+	"version": "0.0.14",
+	"publisher": "mgmcdermott",
+	"engines": {
+		"vscode": "*"
+	},
+	"categories": [
+		"Languages"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mgmcdermott/vscode-language-babel/"
+	},
+	"bugs": "https://github.com/mgmcdermott/vscode-language-babel/issues",
+	"links": {
+		"getstarted": {
+			"uri": "https://github.com/mgmcdermott/vscode-language-babel/blob/master/README.md"
+		},
+		"support": {
+			"uri": "https://github.com/mgmcdermott/vscode-language-babel/issues"
+		}
+	},
+	"icon": "images/babel-logo.png",
+	"galleryBanner": {
+		"color": "#323330",
+		"theme": "dark"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "javascriptreact",
+				"aliases": [
+					"JavaScript React",
+					"jsx"
+				],
+				"extensions": [
+					".jsx"
+				],
+				"configuration": "./javascript.language-configuration.json"
+			},
+			{
+				"id": "javascript",
+				"aliases": [
+					"Babel JavaScript"
+				],
+				"extensions": [
+					"js",
+					"es6",
+					"babel",
+					"jsx",
+					"flow"
+				],
+				"firstLine": "^#!.*\\bnode",
+				"mimetypes": [
+					"text/javascript"
+				],
+				"configuration": "./javascript.language-configuration.json"
+			},
+			{
+				"id": "jsx",
+				"configuration": "./jsx.language-configuration.json"
+			},
+			{
+				"id": "jsx-attr",
+				"configuration": "./jsx-attr.language-configuration.json"
+			},
+			{
+				"id": "styled-css",
+				"configuration": "./styled-css.language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "javascriptreact",
+				"scopeName": "source.js.jsx",
+				"path": "./grammars/Babel-Language.json",
+				"embeddedLanguages": {
+					"meta.tag.jsx": "jsx",
+					"meta.jsx.tag.termination": "jsx",
+					"JSXNested": "jsx",
+					"JSXAttrs": "jsx-attr",
+					"source.inside-js.css.styled": "styled-css"
+				}
+			},
+			{
+				"language": "javascript",
+				"scopeName": "source.js.jsx",
+				"path": "./grammars/Babel-Language.json",
+				"embeddedLanguages": {
+					"meta.tag.jsx": "jsx",
+					"meta.jsx.tag.termination": "jsx",
+					"JSXNested": "jsx",
+					"JSXAttrs": "jsx-attr",
+					"source.inside-js.css.styled": "styled-css"
+				}
+			},
+			{
+				"scopeName": "source.regexp.babel",
+				"path": "./grammars/Babel-Regex.json"
+			},
+			{
+				"scopeName": "source.css.styled",
+				"path": "./grammars/css.json"
+			}
+		],
+		"jsonValidation": [
+			{
+				"fileMatch": "package.json",
+				"url": "http://json.schemastore.org/package"
+			},
+			{
+				"fileMatch": "bower.json",
+				"url": "http://json.schemastore.org/bower"
+			},
+			{
+				"fileMatch": ".bowerrc",
+				"url": "http://json.schemastore.org/bowerrc"
+			},
+			{
+				"fileMatch": ".babelrc",
+				"url": "http://json.schemastore.org/babelrc"
+			},
+			{
+				"fileMatch": "jsconfig.json",
+				"url": "http://json.schemastore.org/jsconfig"
+			},
+			{
+				"fileMatch": "jsconfig.json",
+				"url": "./schemas/jsconfig.schema.json"
+			},
+			{
+				"fileMatch": "jsconfig.*.json",
+				"url": "http://json.schemastore.org/jsconfig"
+			},
+			{
+				"fileMatch": "jsconfig.*.json",
+				"url": "./schemas/jsconfig.schema.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "dd5a2c83-ad8c-4839-a529-0644e5acb646",
+		"publisherId": "668cc5d2-0e97-49e6-bb49-d42e0ba78f63",
+		"publisherDisplayName": "Michael McDermott"
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "title": "My json schema",
+  "description": "description",
+  "properties": {
+    "time": {
+        "type": "string",
+        "title": "time"
+    },
+    "person": { "$ref": "definitions.json#/definitions/person" }
+  }
+}

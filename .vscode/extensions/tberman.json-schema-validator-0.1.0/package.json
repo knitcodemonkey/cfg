@@ -1,0 +1,50 @@
+{
+	"name": "json-schema-validator",
+	"displayName": "JSON Schema Validator",
+	"description": "Validate json schemas live in VS Code.",
+	"version": "0.1.0",
+	"publisher": "tberman",
+	"engines": {
+		"vscode": "^1.4.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.validateJsonSchema"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.validateJsonSchema",
+				"title": "Validate JSON Schema"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "extension.validateJsonSchema",
+				"key": "ctrl+alt+v",
+				"mac": "cmd+alt+v"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"typescript": "^1.8.5",
+		"vscode": "^0.11.0"
+	},
+	"dependencies": {
+		"ajv": "^4.7.0",
+		"json-schema-ref-parser": "^3.1.2"
+	},
+	"__metadata": {
+		"id": "de056427-d058-4b9c-8408-54d6bfe742bf",
+		"publisherId": "201d237a-449a-4e27-a136-7ac2e216521e",
+		"publisherDisplayName": "tberman"
+	}
+}

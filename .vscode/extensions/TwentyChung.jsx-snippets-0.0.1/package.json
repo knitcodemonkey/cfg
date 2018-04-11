@@ -1,0 +1,25 @@
+{
+	"name": "jsx-snippets",
+	"description": "JSX snippets for Visual Studio Code",
+	"version": "0.0.1",
+	"publisher": "TwentyChung",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "jsx",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "cf96781c-ffbf-4359-9a48-89a941b2cbca",
+		"publisherId": "ebaa77e8-5f1e-4a48-9dda-2deacc9bd4db",
+		"publisherDisplayName": "TwentyChung"
+	}
+}

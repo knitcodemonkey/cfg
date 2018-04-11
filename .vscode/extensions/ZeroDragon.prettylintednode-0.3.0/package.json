@@ -1,0 +1,25 @@
+{
+	"name": "prettylintednode",
+	"displayName": "PrettyLintedNode",
+	"description": "This pack helps to use ESLint + Prettier seamessly in your code",
+	"version": "0.3.0",
+	"publisher": "ZeroDragon",
+	"engines": {
+		"vscode": "^1.16.0"
+	},
+	"categories": [
+		"Extension Packs"
+	],
+	"repository": "https://github.com/ZeroDragon/prettylintnode",
+	"icon": "icon.png",
+	"extensionDependencies": [
+		"EditorConfig.editorconfig",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode"
+	],
+	"__metadata": {
+		"id": "ae192f93-6fd3-4809-91ac-d30431543aa5",
+		"publisherId": "a8400b82-4699-473e-ae5b-07f7e171d9ad",
+		"publisherDisplayName": "ZeroDragon"
+	}
+}

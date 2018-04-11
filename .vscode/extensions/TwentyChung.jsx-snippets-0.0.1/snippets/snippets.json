@@ -1,0 +1,32 @@
+{
+	"class": {
+		"prefix": "class",
+		"body": "class ${1:${TM_FILENAME/(.*?)(\\..+)/$1/}} \n\t${2:extends ${3:Parent} }\n\t${4:implements ${5:Interface} }\n{\n\t$0\n}",
+		"description": "class",
+		"scope": "source.jsx"
+	},
+	"for": {
+		"prefix": "for",
+		"body": "for (var ${20:i} = 0; ${20:i} < ${1:ArrayName}.length; ++${20:i}) {\n\t${100:${1:ArrayName}[${20:i}]}$0;\n}",
+		"description": "for loop",
+		"scope": "source.jsx"
+	},
+	"function": {
+		"prefix": "function",
+		"body": "function ${1:name} (${2:args} : ${3:type}) : ${4:type}\n{\n\t$0\n}",
+		"description": "function",
+		"scope": "source.jsx"
+	},
+	"log": {
+		"prefix": "log",
+		"body": "log \"$0\";",
+		"description": "log",
+		"scope": "source.jsx"
+	},
+	"main": {
+		"prefix": "main",
+		"body": "static \nfunction main(args : string[]) : void \n{\n\t$0\n}",
+		"description": "method (main)",
+		"scope": "source.jsx"
+	}
+}
