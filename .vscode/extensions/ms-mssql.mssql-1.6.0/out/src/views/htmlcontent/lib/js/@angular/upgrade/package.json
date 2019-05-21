@@ -1,0 +1,55 @@
+{
+  "_args": [
+    [
+      "@angular/upgrade@2.1.2",
+      "/Users/vsts/agent/2.149.2/work/1/s/src/views/htmlcontent"
+    ]
+  ],
+  "_from": "@angular/upgrade@2.1.2",
+  "_id": "@angular/upgrade@2.1.2",
+  "_inBundle": false,
+  "_integrity": "sha1-/JQj+H/K5BigrjuNVsYV2TVj1E8=",
+  "_location": "/@angular/upgrade",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@angular/upgrade@2.1.2",
+    "name": "@angular/upgrade",
+    "escapedName": "@angular%2fupgrade",
+    "scope": "@angular",
+    "rawSpec": "2.1.2",
+    "saveSpec": null,
+    "fetchSpec": "2.1.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@angular/upgrade/-/upgrade-2.1.2.tgz",
+  "_spec": "2.1.2",
+  "_where": "/Users/vsts/agent/2.149.2/work/1/s/src/views/htmlcontent",
+  "author": {
+    "name": "angular"
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular/issues"
+  },
+  "description": "Angular - the library for easing update from v1 to v2",
+  "homepage": "https://github.com/angular/angular#readme",
+  "license": "MIT",
+  "main": "bundles/upgrade.umd.js",
+  "module": "index.js",
+  "name": "@angular/upgrade",
+  "peerDependencies": {
+    "@angular/core": "2.1.2",
+    "@angular/compiler": "2.1.2",
+    "@angular/platform-browser": "2.1.2",
+    "@angular/platform-browser-dynamic": "2.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular.git"
+  },
+  "typings": "index.d.ts",
+  "version": "2.1.2"
+}

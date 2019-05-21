@@ -1,0 +1,40 @@
+{
+	"name": "nord-5-stars",
+	"displayName": "Nord Dark ★★★★★",
+	"description": "nord Dark Collections",
+	"version": "1.0.1",
+	"publisher": "sldobri",
+	"icon": "logo.png",
+	"galleryBanner": {
+		"color": "#0b1015",
+		"theme": "dark"
+	},
+	"homepage": "https://github.com/sldobri/nord-5-stars/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sldobri/nord-5-stars.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sldobri/nord-5-stars/issues"
+	},
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "★★★★★ NORD DARK ★★★★★",
+				"uiTheme": "vs-dark",
+				"path": "./themes/nord-bunker.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "acf63a5d-9a27-4cd5-aafe-c5430785aff3",
+		"publisherId": "688471b5-3365-4cd5-8597-783c039d84e3",
+		"publisherDisplayName": "Sergio Luiz Dobri"
+	}
+}

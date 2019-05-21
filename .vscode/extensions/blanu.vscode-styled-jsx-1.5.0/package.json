@@ -1,0 +1,55 @@
+{
+	"name": "vscode-styled-jsx",
+	"displayName": "vscode-styled-jsx",
+	"description": "Syntax highlighting for styled-jsx",
+	"version": "1.5.0",
+	"publisher": "blanu",
+	"engines": {
+		"vscode": "^1.26.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/xekri/vscode-styled-jsx"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "source.css.jsx.styled",
+				"aliases": [
+					"CSS (Styled JSX)"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "source.css.jsx.styled",
+				"scopeName": "source.css.jsx.styled",
+				"path": "./syntaxes/css.json"
+			},
+			{
+				"injectTo": [
+					"source.js",
+					"source.ts",
+					"source.jsx",
+					"source.js.jsx",
+					"source.tsx"
+				],
+				"scopeName": "styled-jsx",
+				"path": "./syntaxes/jsx-styled.json",
+				"embeddedLanguages": {
+					"source.css.scss": "css",
+					"meta.embedded.line.ts": "typescript"
+				}
+			}
+		]
+	},
+	"__metadata": {
+		"id": "282c56aa-f02e-40b6-b55e-bfdee63cea4d",
+		"publisherId": "c04d5ec5-a178-482b-b523-c4f667895677",
+		"publisherDisplayName": "niceSprite"
+	}
+}

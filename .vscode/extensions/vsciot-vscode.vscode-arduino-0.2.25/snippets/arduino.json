@@ -1,0 +1,65 @@
+{
+    "ls": {
+        "prefix": "asl",
+        "body": [
+            "void setup()",
+            "{",
+            "\t${1}",
+            "}",
+            "",
+            "void loop()",
+            "{",
+            "\t${2}",
+            "}"
+        ],
+        "description": "Main arduino body with setup/loop"
+    },
+    "loop": {
+        "prefix": "aloop",
+        "body": [
+            "void loop()",
+            "{",
+            "\t${0}",
+            "}"
+        ],
+        "description": "Function loop"
+    },
+    "setup": {
+        "prefix": "asetup",
+        "body": [
+            "void setup()",
+            "{",
+            "\t${0}",
+            "}"
+        ],
+        "description": "Function setup"
+    },
+    "spr": {
+        "prefix": "aspr",
+        "body": [
+            "Serial.print($0)"
+        ],
+        "description": "Insert Serial.print"
+    },
+    "sprl": {
+        "prefix": "asprl",
+        "body": [
+            "Serial.println($0)"
+        ],
+        "description": "Insert Serial.println"
+    },
+    "dw": {
+        "prefix": "adw",
+        "body": [
+            "digitalWrite($0)"
+        ],
+        "description": "Insert digitalWrite"
+    },
+    "dr": {
+        "prefix": "adr",
+        "body": [
+            "digitalRead($0)"
+        ],
+        "description": "Insert digitalRead"
+    }
+}

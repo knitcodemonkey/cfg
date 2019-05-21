@@ -1,0 +1,4 @@
+{"notification":"Cannot find Arduino IDE. Please specify the \"arduino.path\" in the User Settings. Requires a restart after change.","showUser":true,"telemetry":true,"message":"error","errorLine":"src/extension.js:87:66","level":"error","timestamp":"2019-02-15T23:49:53.196Z"}
+{"notification":"Please select the board type first.","showUser":true,"telemetry":true,"message":"error","errorLine":"src/arduino/arduino.js:636:59)","level":"error","timestamp":"2019-02-16T00:11:21.443Z"}
+{"notification":"Please select the board type first.","showUser":true,"telemetry":true,"message":"error","errorLine":"src/arduino/arduino.js:636:59)","level":"error","timestamp":"2019-02-16T00:11:31.855Z"}
+{"notification":"Please select the board type first.","showUser":true,"telemetry":true,"message":"error","errorLine":"src/arduino/arduino.js:636:59)","level":"error","timestamp":"2019-02-16T00:11:51.071Z"}

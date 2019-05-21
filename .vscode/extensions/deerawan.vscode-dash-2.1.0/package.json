@@ -1,0 +1,450 @@
+{
+	"name": "vscode-dash",
+	"displayName": "Dash",
+	"description": "Dash and Zeal integration in Visual Studio Code",
+	"version": "2.1.0",
+	"publisher": "deerawan",
+	"icon": "images/dash.png",
+	"galleryBanner": {
+		"color": "#7171AD",
+		"theme": "dark"
+	},
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"bugs": {
+		"url": "https://github.com/deerawan/vscode-dash/issues",
+		"email": "deerawan@gmail.com"
+	},
+	"homepage": "https://github.com/deerawan/vscode-dash",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/deerawan/vscode-dash"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.dash.all",
+		"onCommand:extension.dash.specific",
+		"onCommand:extension.dash.customSyntax",
+		"onCommand:extension.dash.emptySyntax"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.dash.specific",
+				"title": "Search in Dash for current selection"
+			},
+			{
+				"command": "extension.dash.all",
+				"title": "Search in Dash for all documentation"
+			},
+			{
+				"command": "extension.dash.emptySyntax",
+				"title": "Open Dash for current language documentation"
+			},
+			{
+				"command": "extension.dash.customSyntax",
+				"title": "Search in Dash for a custom string"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "extension.dash.specific",
+				"key": "ctrl+h",
+				"mac": "ctrl+h",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.dash.all",
+				"key": "ctrl+alt+h",
+				"mac": "ctrl+alt+h",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.dash.emptySyntax",
+				"key": "ctrl+shift+h",
+				"mac": "ctrl+shift+h",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.dash.customSyntax",
+				"key": "alt+h",
+				"mac": "alt+h",
+				"when": "editorTextFocus"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Dash Configuration",
+			"properties": {
+				"dash.languageIdToDocsetMap": {
+					"type": "object",
+					"description": "Set mapping of languageId to dash docset.",
+					"default": {
+						"ansible": [
+							"ansible"
+						],
+						"ansible-advanced": [
+							"ansible"
+						],
+						"css": [
+							"css",
+							"bootstrap",
+							"foundation",
+							"less",
+							"awesome",
+							"cordova",
+							"phonegap"
+						],
+						"clojure": [
+							"clojure"
+						],
+						"coffee": [
+							"coffee"
+						],
+						"cpp": [
+							"cpp",
+							"net",
+							"boost",
+							"qt",
+							"cvcpp",
+							"cocos2dx",
+							"c",
+							"manpages"
+						],
+						"csharp": [
+							"net",
+							"mono",
+							"unity3d"
+						],
+						"dart": [
+							"dartlang",
+							"polymerdart",
+							"angulardart"
+						],
+						"elixir": [
+							"elixir"
+						],
+						"elm": [
+							"elm"
+						],
+						"erlang": [
+							"erlang"
+						],
+						"go": [
+							"go",
+							"godoc"
+						],
+						"haskell": [
+							"haskell"
+						],
+						"haml": [
+							"haml"
+						],
+						"html": [
+							"html",
+							"svg",
+							"css",
+							"bootstrap",
+							"foundation",
+							"awesome",
+							"statamic",
+							"javascript",
+							"jquery",
+							"jqueryui",
+							"jquerym",
+							"angularjs",
+							"backbone",
+							"marionette",
+							"meteor",
+							"moo",
+							"prototype",
+							"ember",
+							"lodash",
+							"underscore",
+							"sencha",
+							"extjs",
+							"knockout",
+							"zepto",
+							"cordova",
+							"phonegap",
+							"yui"
+						],
+						"jade": [
+							"jade"
+						],
+						"java": [
+							"java",
+							"javafx",
+							"grails",
+							"groovy",
+							"playjava",
+							"spring",
+							"cvj",
+							"processing"
+						],
+						"javascript": [
+							"javascript",
+							"jquery",
+							"jqueryui",
+							"jquerym",
+							"react",
+							"angularjs",
+							"backbone",
+							"marionette",
+							"meteor",
+							"sproutcore",
+							"moo",
+							"prototype",
+							"bootstrap",
+							"foundation",
+							"lodash",
+							"underscore",
+							"ember",
+							"sencha",
+							"extjs",
+							"titanium",
+							"knockout",
+							"zepto",
+							"yui",
+							"d3",
+							"svg",
+							"dojo",
+							"coffee",
+							"nodejs",
+							"express",
+							"grunt",
+							"mongoose",
+							"moment",
+							"require",
+							"awsjs",
+							"jasmine",
+							"sails",
+							"sinon",
+							"chai",
+							"html",
+							"css",
+							"cordova",
+							"phonegap",
+							"unity3d"
+						],
+						"javascriptreact": [
+							"react"
+						],
+						"julia": [
+							"julia"
+						],
+						"less": [
+							"less"
+						],
+						"lua": [
+							"lua",
+							"corona"
+						],
+						"markdown": [
+							"markdown"
+						],
+						"objective-c": [
+							"iphoneos",
+							"macosx",
+							"watchos",
+							"tvos",
+							"appledoc",
+							"cocos2d",
+							"cocos3d",
+							"kobold2d",
+							"sparrow",
+							"c",
+							"manpages"
+						],
+						"perl": [
+							"perl",
+							"manpages"
+						],
+						"php": [
+							"php",
+							"wordpress",
+							"drupal",
+							"zend",
+							"laravel",
+							"yii",
+							"joomla",
+							"ee",
+							"codeigniter",
+							"cakephp",
+							"phpunit",
+							"symfony",
+							"typo3",
+							"twig",
+							"smarty",
+							"craft",
+							"phpp",
+							"html",
+							"statamic",
+							"mysql",
+							"sqlite",
+							"mongodb",
+							"psql",
+							"redis"
+						],
+						"pde": [
+							"processing"
+						],
+						"puppet": [
+							"puppet"
+						],
+						"python": [
+							"python",
+							"django",
+							"twisted",
+							"sphinx",
+							"flask",
+							"tornado",
+							"sqlalchemy",
+							"numpy",
+							"scipy",
+							"salt",
+							"pandas",
+							"matplotlib",
+							"cvp"
+						],
+						"r": [
+							"r"
+						],
+						"ruby": [
+							"ruby",
+							"rubygems",
+							"rails"
+						],
+						"rust": [
+							"rust"
+						],
+						"sass": [
+							"sass",
+							"compass",
+							"bourbon",
+							"neat",
+							"susy",
+							"css"
+						],
+						"scala": [
+							"scala",
+							"akka",
+							"playscala"
+						],
+						"shellscript": [
+							"bash",
+							"manpages"
+						],
+						"sql": [
+							"mysql",
+							"sqlite",
+							"psql"
+						],
+						"stylus": [
+							"stylus"
+						],
+						"swift": [
+							"swift",
+							"iphoneos",
+							"macosx",
+							"watchos",
+							"tvos",
+							"appledoc"
+						],
+						"tcl": [
+							"tcl"
+						],
+						"typescript": [
+							"typescript",
+							"javascript"
+						],
+						"yaml": [
+							"chef",
+							"ansible"
+						],
+						"haxe": [
+							"haxe"
+						],
+						"terraform": [
+							"terraform"
+						]
+					}
+				},
+				"dash.fileNameToDocsetMap": {
+					"type": "object",
+					"description": "Set mapping of file name to dash docset (supports glob pattern).",
+					"default": {
+						"[dD]ocker*": [
+							"docker"
+						],
+						"Vagrantfile": [
+							"vagrant"
+						],
+						"gruntfile.js": [
+							"grunt"
+						],
+						"gulpfile.js": [
+							"gulp"
+						]
+					}
+				},
+				"dash.exactDocset": {
+					"type": "boolean",
+					"description": "Controls whether Dash should search the keyword in exact docsets specified in docset setting.",
+					"default": false
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+		"contributor:add": "all-contributors add",
+		"contributor:generate": "all-contributors generate",
+		"contributor:check": "all-contributors check",
+		"test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec --ui tdd './out/test/**/*.test.js'",
+		"test:local": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec --ui tdd './out/test/**/*.test.js'",
+		"format": "prettier --write \"{src,test}/**/*.ts\"",
+		"lint": "tslint -c tslint.json 'src/**/*.ts' 'test/**/*.ts' --fix"
+	},
+	"dependencies": {
+		"micromatch": "^3.1.10"
+	},
+	"devDependencies": {
+		"all-contributors-cli": "^5.4.0",
+		"coveralls": "^2.11.4",
+		"husky": "1.1.1",
+		"istanbul": "^0.4.1",
+		"lint-staged": "^4.3.0",
+		"mocha": "^5.2.0",
+		"prettier": "^1.7.4",
+		"tslint": "^5.7.0",
+		"tslint-config-prettier": "^1.6.0",
+		"typescript": "^2.9.0",
+		"vscode": "0.10.x"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{ts,json}": [
+			"prettier",
+			"git add"
+		],
+		"*.ts": [
+			"tslint --fix",
+			"tslint"
+		]
+	},
+	"__metadata": {
+		"id": "cba79045-6f59-4f86-8c80-af78d566d8cf",
+		"publisherId": "c9174db5-9cbf-425f-8309-bc5d0be78c03",
+		"publisherDisplayName": "Budi Irawan"
+	}
+}

@@ -1,0 +1,130 @@
+{
+	"name": "sort-lines",
+	"displayName": "Sort lines",
+	"description": "Sorts lines of text",
+	"version": "1.8.0",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Tyriar/vscode-sort-lines/issues"
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "tslint ./src/*.ts",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"homepage": "https://github.com/Tyriar/vscode-sort-lines",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Tyriar/vscode-sort-lines"
+	},
+	"publisher": "Tyriar",
+	"engines": {
+		"vscode": "^1.21.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:sortLines.sortLines",
+		"onCommand:sortLines.sortLinesReverse",
+		"onCommand:sortLines.sortLinesCaseInsensitive",
+		"onCommand:sortLines.sortLinesCaseInsensitiveUnique",
+		"onCommand:sortLines.sortLinesLineLength",
+		"onCommand:sortLines.sortLinesLineLengthReverse",
+		"onCommand:sortLines.sortLinesVariableLength",
+		"onCommand:sortLines.sortLinesVariableLengthReverse",
+		"onCommand:sortLines.sortLinesNatural",
+		"onCommand:sortLines.sortLinesUnique",
+		"onCommand:sortLines.sortLinesShuffle"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "sortLines.sortLines",
+				"title": "Sort lines (ascending, case sensitive)"
+			},
+			{
+				"command": "sortLines.sortLinesCaseInsensitive",
+				"title": "Sort lines (ascending, case insensitive)"
+			},
+			{
+				"command": "sortLines.sortLinesCaseInsensitiveUnique",
+				"title": "Sort lines (unique ascending, case insensitive)"
+			},
+			{
+				"command": "sortLines.sortLinesReverse",
+				"title": "Sort lines (descending, case sensitive)"
+			},
+			{
+				"command": "sortLines.sortLinesLineLength",
+				"title": "Sort lines (line length ascending)"
+			},
+			{
+				"command": "sortLines.sortLinesLineLengthReverse",
+				"title": "Sort lines (line length descending)"
+			},
+			{
+				"command": "sortLines.sortLinesVariableLength",
+				"title": "Sort lines (variable length ascending)"
+			},
+			{
+				"command": "sortLines.sortLinesVariableLengthReverse",
+				"title": "Sort lines (variable length descending)"
+			},
+			{
+				"command": "sortLines.sortLinesNatural",
+				"title": "Sort lines (natural)"
+			},
+			{
+				"command": "sortLines.sortLinesUnique",
+				"title": "Sort lines (unique ascending, case sensitive)"
+			},
+			{
+				"command": "sortLines.sortLinesShuffle",
+				"title": "Sort lines (shuffle)"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Sort Lines",
+			"properties": {
+				"sortLines.filterBlankLines": {
+					"type": "boolean",
+					"default": false,
+					"description": "Filter out blank (empty or whitespace-only) lines."
+				},
+				"sortLines.sortEntireFile": {
+					"type": "boolean",
+					"default": false,
+					"description": "Sort entire file if no selection is active."
+				}
+			}
+		},
+		"keybindings": [
+			{
+				"command": "sortLines.sortLines",
+				"key": "f9",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.32",
+		"@types/node": "^6.0.40",
+		"mocha": "^2.3.3",
+		"tslint": "^5.9.1",
+		"tslint-consistent-codestyle": "^1.13.0",
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0"
+	},
+	"icon": "images/icon.png",
+	"__metadata": {
+		"id": "00518570-772b-4ccb-8b06-d056f3f556e0",
+		"publisherId": "738ff3bb-8e77-45d5-bd26-7c9ad62959b9",
+		"publisherDisplayName": "Daniel Imms"
+	}
+}

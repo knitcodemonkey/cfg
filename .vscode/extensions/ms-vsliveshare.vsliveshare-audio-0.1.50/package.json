@@ -1,0 +1,418 @@
+{
+	"name": "vsliveshare-audio",
+	"displayName": "Live Share Audio",
+	"description": "Adds audio calling capabilities to Visual Studio Live Share",
+	"version": "0.1.50",
+	"publisher": "ms-vsliveshare",
+	"preview": true,
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"icon": "images/icon.png",
+	"homepage": "https://aka.ms/vsls-audio",
+	"bugs": {
+		"url": "https://aka.ms/vsls-issues",
+		"email": "vsls-feedback@microsoft.com"
+	},
+	"engines": {
+		"vscode": "^1.21.0"
+	},
+	"keywords": [
+		"Collaboration",
+		"Voice",
+		"Sharing",
+		"Audio",
+		"Call"
+	],
+	"categories": [
+		"Other"
+	],
+	"aiKey": "AIF-d9b70cd4-b9f9-4d70-929b-a071c400b217",
+	"activationEvents": [
+		"onFileSystemAccess:vsls",
+		"*"
+	],
+	"repository": {
+		"url": "https://github.com/MicrosoftDocs/live-share"
+	},
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "liveshare.audio.startOrJoinAudio",
+				"title": "Start or Join Audio Call",
+				"category": "Live Share",
+				"vsls-label": "$(unmute) Start or Join Audio Call",
+				"vsls-detail": "Enable audio for the Live Share session."
+			},
+			{
+				"command": "liveshare.audio",
+				"title": "Call Settings",
+				"category": "Live Share",
+				"vsls-label": "$(unmute) Manage Call Settings",
+				"vsls-detail": "Mute/unmute, select audio devices, or disconnect from the call.",
+				"icon": {
+					"dark": "images/dark/gear.svg",
+					"light": "images/light/gear.svg"
+				}
+			},
+			{
+				"command": "liveshare.audio.muteSelf",
+				"title": "Mute Yourself",
+				"category": "Live Share",
+				"icon": {
+					"dark": "images/dark/speaker-mute.svg",
+					"light": "images/light/speaker-mute.svg"
+				}
+			},
+			{
+				"command": "liveshare.audio.unmuteSelf",
+				"title": "Unmute Yourself",
+				"category": "Live Share",
+				"icon": {
+					"dark": "images/dark/speaker.svg",
+					"light": "images/light/speaker.svg"
+				}
+			},
+			{
+				"command": "liveshare.audio.leaveAudio",
+				"title": "Disconnect Audio Call",
+				"category": "Live Share",
+				"icon": {
+					"dark": "images/stop.svg",
+					"light": "images/stop.svg"
+				}
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Live Share Audio",
+			"properties": {
+				"liveshare.audio.joinCallBehavior": {
+					"type": "string",
+					"default": "prompt",
+					"description": "Controls how to respond when an audio call is started.",
+					"enum": [
+						"accept",
+						"prompt"
+					]
+				},
+				"liveshare.audio.startCallOnShare": {
+					"type": "boolean",
+					"default": false,
+					"description": "Controls whether to automatically start an audio call whenever you share."
+				}
+			}
+		},
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "liveshare.audio.startOrJoinAudio",
+					"when": "liveshare.audio:state == LiveShareWithoutAudio"
+				},
+				{
+					"command": "liveshare.audio",
+					"when": "liveshare.audio:state == LiveShareWithAudio"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "liveshare.audio",
+					"when": "view =~ /^liveshare\\.session(\\.explorer)?$/ && viewItem == audio.participants",
+					"group": "inline"
+				},
+				{
+					"command": "liveshare.audio.leaveAudio",
+					"when": "view =~ /^liveshare\\.session(\\.explorer)?$/ && viewItem == audio.participants",
+					"group": "inline"
+				},
+				{
+					"command": "liveshare.audio.muteSelf",
+					"when": "view =~ /^liveshare\\.session(\\.explorer)?$/ && viewItem == audio.self",
+					"group": "inline"
+				},
+				{
+					"command": "liveshare.audio.unmuteSelf",
+					"when": "view =~ /^liveshare\\.session(\\.explorer)?$/ && viewItem == audio.self.muted",
+					"group": "inline"
+				},
+				{
+					"command": "liveshare.audio",
+					"when": "view =~ /^liveshare\\.session(\\.explorer)?$/ && viewItem == audio.participants",
+					"group": "navigation"
+				},
+				{
+					"command": "liveshare.audio.leaveAudio",
+					"when": "view =~ /^liveshare\\.session(\\.explorer)?$/ && viewItem == audio.participants",
+					"group": "navigation"
+				},
+				{
+					"command": "liveshare.audio.muteSelf",
+					"when": "view =~ /^liveshare\\.session(\\.explorer)?$/ && viewItem == audio.self",
+					"group": "navigation"
+				},
+				{
+					"command": "liveshare.audio.unmuteSelf",
+					"when": "view =~ /^liveshare\\.session(\\.explorer)?$/ && viewItem == audio.self.muted",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"package": "node ./node_modules/vsce/out/vsce package",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.109",
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^7.0.43",
+		"gulp": "^3.9.1",
+		"gulp-decompress": "^2.0.2",
+		"gulp-prompt": "^1.0.1",
+		"gulp-tslint": "^8.1.3",
+		"keytar": "^4.2.1",
+		"minimist": "^1.2.0",
+		"nerdbank-gitversioning": "^2.1.7",
+		"request": "^2.87.0",
+		"tslint": "^5.10.0",
+		"typescript": "^2.6.1",
+		"unzip": "^0.1.11",
+		"vsce": "^1.42.0",
+		"vscode": "^1.1.18",
+		"yargs": "^12.0.1"
+	},
+	"dependencies": {
+		"axios": "^0.18.0",
+		"better-unzip": "^0.1.11",
+		"dateformat": "^3.0.3",
+		"download": "^7.1.0",
+		"fs-extra": "^6.0.1",
+		"glob": "^7.1.2",
+		"lockfile": "^1.0.4",
+		"lodash": "^4.17.10",
+		"semver": "^5.5.0",
+		"skype-calling-electron": "file:external/skype-calling-electron",
+		"skype-calling-interface": "file:external/skype-calling-interface",
+		"tar": "^4.4.4",
+		"tmp": "0.0.33",
+		"uuid": "^3.2.1",
+		"vscode-extension-telemetry": "0.1.0",
+		"vsls": "^0.3.967"
+	},
+	"extensionDependencies": [
+		"ms-vsliveshare.vsliveshare"
+	],
+	"runtimeDependencies": [
+		{
+			"code": "slimcore-1.7.0",
+			"description": "SlimCore-1.7.0-Linux.tgz",
+			"url": "https://go.microsoft.com/fwlink/?linkid=2008708&clcid=0x409",
+			"platforms": [
+				"linux"
+			],
+			"architectures": [
+				"x64"
+			],
+			"vscodeVersion": ">=1.24.0 <1.26.0",
+			"installPath": "./node_modules/slimcore-1.7",
+			"unpackPath": "../../temp",
+			"packageRootPath": "package",
+			"installTestPath": "./node_modules/slimcore-1.7/package.json",
+			"checksum": "f053ebca623a131b9c14f9461fb52678979dbc83"
+		},
+		{
+			"code": "slimcore-1.7.0",
+			"description": "SlimCore-1.7.0-Mac.tgz",
+			"url": "https://go.microsoft.com/fwlink/?linkid=2008616&clcid=0x409",
+			"platforms": [
+				"darwin"
+			],
+			"architectures": [
+				"x64"
+			],
+			"vscodeVersion": ">=1.24.0 <1.26.0",
+			"installPath": "./node_modules/slimcore-1.7",
+			"unpackPath": "../../temp",
+			"packageRootPath": "package",
+			"installTestPath": "./node_modules/slimcore-1.7/package.json",
+			"checksum": "8809cfc5069d3a66d201d60f5c845f3133b8ccbe"
+		},
+		{
+			"code": "slimcore-1.7.0",
+			"description": "SlimCore-1.7.0-Win32-x64.tgz",
+			"url": "https://go.microsoft.com/fwlink/?linkid=2008404&clcid=0x409",
+			"platforms": [
+				"win32"
+			],
+			"architectures": [
+				"x64"
+			],
+			"vscodeVersion": ">=1.24.0 <1.26.0",
+			"installPath": "./node_modules/slimcore-1.7",
+			"unpackPath": "../../temp",
+			"packageRootPath": "package",
+			"installTestPath": "./node_modules/slimcore-1.7/package.json",
+			"checksum": "be78cd7978d8a3484188c9db9b10da6ae53c96bf"
+		},
+		{
+			"code": "slimcore-1.7.0",
+			"description": "SlimCore-1.7.0-Win32-x86.tgz",
+			"url": "https://go.microsoft.com/fwlink/?linkid=2008615&clcid=0x409",
+			"platforms": [
+				"win32"
+			],
+			"architectures": [
+				"ia32"
+			],
+			"vscodeVersion": ">=1.24.0 <1.26.0",
+			"installPath": "./node_modules/slimcore-1.7",
+			"unpackPath": "../../temp",
+			"packageRootPath": "package",
+			"installTestPath": "./node_modules/slimcore-1.7/package.json",
+			"checksum": "6528b10ef25bacad641f25677589d8994ea21a2b"
+		},
+		{
+			"code": "slimcore-2.0",
+			"description": "SlimCore-2.0-Linux.tgz",
+			"url": "https://go.microsoft.com/fwlink/?linkid=2052187&clcid=0x409",
+			"platforms": [
+				"linux"
+			],
+			"architectures": [
+				"x64"
+			],
+			"vscodeVersion": ">=1.26.0 <1.31.0",
+			"installPath": "./node_modules/slimcore-2.0",
+			"unpackPath": "../../temp",
+			"packageRootPath": "package",
+			"installTestPath": "./node_modules/slimcore-2.0/package.json",
+			"checksum": "3db1c699ee8dbdeac72f937ead8ee92e0053d369"
+		},
+		{
+			"code": "slimcore-2.0",
+			"description": "SlimCore-2.0-Mac.tgz",
+			"url": "https://go.microsoft.com/fwlink/?linkid=2052188&clcid=0x409",
+			"platforms": [
+				"darwin"
+			],
+			"architectures": [
+				"x64"
+			],
+			"vscodeVersion": ">=1.26.0 <1.31.0",
+			"installPath": "./node_modules/slimcore-2.0",
+			"unpackPath": "../../temp",
+			"packageRootPath": "package",
+			"installTestPath": "./node_modules/slimcore-2.0/package.json",
+			"checksum": "8aecc315a372f2f785a9181631ae954683e3bb11"
+		},
+		{
+			"code": "slimcore-2.0",
+			"description": "SlimCore-2.0-Win32-x64.tgz",
+			"url": "https://go.microsoft.com/fwlink/?linkid=2052185&clcid=0x409",
+			"platforms": [
+				"win32"
+			],
+			"architectures": [
+				"x64"
+			],
+			"vscodeVersion": ">=1.26.0 <1.31.0",
+			"installPath": "./node_modules/slimcore-2.0",
+			"unpackPath": "../../temp",
+			"packageRootPath": "package",
+			"installTestPath": "./node_modules/slimcore-2.0/package.json",
+			"checksum": "d6e5d9d2ec8a99e652780b313015cadaab623566"
+		},
+		{
+			"code": "slimcore-2.0",
+			"description": "SlimCore-2.0-Win32-x86.tgz",
+			"url": "https://go.microsoft.com/fwlink/?linkid=2052189&clcid=0x409",
+			"platforms": [
+				"win32"
+			],
+			"architectures": [
+				"ia32"
+			],
+			"vscodeVersion": ">=1.26.0 <1.31.0",
+			"installPath": "./node_modules/slimcore-2.0",
+			"unpackPath": "../../temp",
+			"packageRootPath": "package",
+			"installTestPath": "./node_modules/slimcore-2.0/package.json",
+			"checksum": "4900503c2df5ef4954b3a8fd014a456085b6743b"
+		},
+		{
+			"code": "slimcore-3.0",
+			"description": "SlimCore-3.0-Linux.tgz",
+			"url": "https://go.microsoft.com/fwlink/?linkid=2052436&clcid=0x409",
+			"platforms": [
+				"linux"
+			],
+			"architectures": [
+				"x64"
+			],
+			"vscodeVersion": ">=1.31.0",
+			"installPath": "./node_modules/slimcore-3.0",
+			"unpackPath": "../../temp",
+			"packageRootPath": "package",
+			"installTestPath": "./node_modules/slimcore-3.0/package.json",
+			"checksum": "9a311dbb4e53ea55e41a82610ecfaaa49760cd44"
+		},
+		{
+			"code": "slimcore-3.0",
+			"description": "SlimCore-3.0-Mac.tgz",
+			"url": "https://go.microsoft.com/fwlink/?linkid=2052435&clcid=0x409",
+			"platforms": [
+				"darwin"
+			],
+			"architectures": [
+				"x64"
+			],
+			"vscodeVersion": ">=1.31.0",
+			"installPath": "./node_modules/slimcore-3.0",
+			"unpackPath": "../../temp",
+			"packageRootPath": "package",
+			"installTestPath": "./node_modules/slimcore-3.0/package.json",
+			"checksum": "3428d47003f64f323479e95e14a49e5534330de0"
+		},
+		{
+			"code": "slimcore-3.0",
+			"description": "SlimCore-3.0-Win32-x64.tgz",
+			"url": "https://go.microsoft.com/fwlink/?linkid=2052186&clcid=0x409",
+			"platforms": [
+				"win32"
+			],
+			"architectures": [
+				"x64"
+			],
+			"vscodeVersion": ">=1.31.0",
+			"installPath": "./node_modules/slimcore-3.0",
+			"unpackPath": "../../temp",
+			"packageRootPath": "package",
+			"installTestPath": "./node_modules/slimcore-3.0/package.json",
+			"checksum": "bf1c180ba91f9a3ba213698ae192e191e61913b4"
+		},
+		{
+			"code": "slimcore-3.0",
+			"description": "SlimCore-3.0-Win32-x86.tgz",
+			"url": "https://go.microsoft.com/fwlink/?linkid=2052437&clcid=0x409",
+			"platforms": [
+				"win32"
+			],
+			"architectures": [
+				"ia32"
+			],
+			"vscodeVersion": ">=1.31.0",
+			"installPath": "./node_modules/slimcore-3.0",
+			"unpackPath": "../../temp",
+			"packageRootPath": "package",
+			"installTestPath": "./node_modules/slimcore-3.0/package.json",
+			"checksum": "15eb0781b5ba141d621efc5f36a3ad4212fd786c"
+		}
+	],
+	"__metadata": {
+		"id": "f38fdd1c-7ee2-47b1-90b9-77ecc90d4bff",
+		"publisherId": "74365139-d24d-4d0a-8377-c28643f7a216",
+		"publisherDisplayName": "Microsoft"
+	}
+}

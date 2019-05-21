@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for debugger\sourceMap.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">debugger/</a> sourceMap.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/42</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/42</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license. See LICENSE file in the project root for details.
+&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>import url = require("url");
+<span class="cstat-no" title="statement not covered" ></span>import path = require("path");
+<span class="cstat-no" title="statement not covered" ></span>import { SourceMapsCombinator } from "./sourceMapsCombinator";
+import { RawSourceMap } from "source-map";
+&nbsp;
+const IS_REMOTE = /^[a-zA-z]{2,}:\/\//; // Detection remote sources or specific protocols (like "webpack:///")
+&nbsp;
+interface ISourceMap extends RawSourceMap {
+    sections?: ISourceMapSection[];
+}
+interface ISourceMapSection {
+    map: ISourceMap;
+    offset: { column: number, line: number };
+}
+&nbsp;
+export interface IStrictUrl extends url.Url {
+    pathname: string;
+    href: string;
+}
+&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>export class SourceMapUtil {
+    private static <span class="cstat-no" title="statement not covered" ></span>SourceMapURLRegex: RegExp = /\/\/(#|@) sourceMappingURL=((?!data:).+?)\s*$/m;
+&nbsp;
+    /**
+     * Given a script body and URL, this method parses the body and finds the corresponding source map URL.
+     * If the source map URL is not found in the body in the expected form, null is returned.
+     */
+    public <span class="fstat-no" title="function not covered" >getSourceMapURL(scriptUrl: url.Url, scriptBody: string)</span>: IStrictUrl | null {
+<span class="cstat-no" title="statement not covered" ></span>        let result: IStrictUrl | null = null;
+&nbsp;
+        // scriptUrl = "http://localhost:8081/index.ios.bundle?platform=ios&amp;dev=true"
+<span class="cstat-no" title="statement not covered" >        let sourceMappingRelativeUrl = this.getSourceMapRelativeUrl(scriptBody); // sourceMappingRelativeUrl = "/index.ios.map?platform=ios&amp;dev=true"</span>
+<span class="cstat-no" title="statement not covered" >        if (sourceMappingRelativeUrl) {</span>
+<span class="cstat-no" title="statement not covered" ></span>            let sourceMappingUrl = url.parse(sourceMappingRelativeUrl);
+<span class="cstat-no" title="statement not covered" ></span>            sourceMappingUrl.protocol = scriptUrl.protocol;
+<span class="cstat-no" title="statement not covered" ></span>            sourceMappingUrl.host = scriptUrl.host;
+            // parse() repopulates all the properties of the URL
+<span class="cstat-no" title="statement not covered" ></span>            result = &lt;IStrictUrl&gt;url.parse(url.format(sourceMappingUrl));
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>        return result;
+    }
+&nbsp;
+    /**
+     * Updates the contents of a source map file to be VS Code friendly:
+     * - makes source paths unix style and relative to the sources root path
+     * - updates the url of the script file
+     * - deletes the script content from the source map
+     *
+     * @parameter sourceMapBody - body of the source map as generated by the RN Packager.
+     * @parameter scriptPath - path of the script file asssociated with this source map.
+     * @parameter sourcesRootPath - root path of sources
+     *
+     */
+    public <span class="fstat-no" title="function not covered" >updateSourceMapFile(sourceMapBody: string, scriptPath: string, sourcesRootPath: string, packagerRemoteRoot?: string, packagerLocalRoot?: string)</span>: string {
+<span class="cstat-no" title="statement not covered" >        try {</span>
+<span class="cstat-no" title="statement not covered" ></span>            let sourceMap = &lt;ISourceMap&gt;JSON.parse(sourceMapBody);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            if (sourceMap.sections) {</span>
+&nbsp;
+                // TODO: there is a need to handle value.map == null, make a fake map
+<span class="cstat-no" title="statement not covered" ></span>                sourceMap.sections = sourceMap.sections.filter((value, index, array) =&gt; {
+<span class="cstat-no" title="statement not covered" ></span>                    return value.map != null;
+                });
+&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>                sourceMap = require("flatten-source-map")(sourceMap);
+            }
+&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>            let sourceMapsCombinator = new SourceMapsCombinator();
+<span class="cstat-no" title="statement not covered" ></span>            sourceMap = sourceMapsCombinator.convert(sourceMap);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            if (sourceMap.sources) {</span>
+<span class="cstat-no" title="statement not covered" ></span>                sourceMap.sources = sourceMap.sources.map(sourcePath =&gt; {
+<span class="cstat-no" title="statement not covered" ></span>                    return IS_REMOTE.test(sourcePath) ? sourcePath : this.updateSourceMapPath(sourcePath, sourcesRootPath, packagerRemoteRoot, packagerLocalRoot);
+                });
+            }
+&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>            delete sourceMap.sourcesContent;
+<span class="cstat-no" title="statement not covered" ></span>            sourceMap.sourceRoot = "";
+<span class="cstat-no" title="statement not covered" ></span>            sourceMap.file = scriptPath;
+<span class="cstat-no" title="statement not covered" ></span>            return JSON.stringify(sourceMap);
+        } catch (exception) {
+<span class="cstat-no" title="statement not covered" ></span>            return sourceMapBody;
+        }
+    }
+&nbsp;
+    public <span class="fstat-no" title="function not covered" >appendSourceMapPaths(scriptBody: string, sourceMappingUrl: string)</span> {
+<span class="cstat-no" title="statement not covered" ></span>        scriptBody += `//# sourceMappingURL=${sourceMappingUrl}`;
+<span class="cstat-no" title="statement not covered" ></span>        return scriptBody;
+    }
+&nbsp;
+    /**
+     * Updates source map URLs in the script body.
+     */
+    public <span class="fstat-no" title="function not covered" >updateScriptPaths(scriptBody: string, sourceMappingUrl: IStrictUrl)</span> {
+        // Update the body with the new location of the source map on storage.
+<span class="cstat-no" title="statement not covered" ></span>        return scriptBody.replace(SourceMapUtil.SourceMapURLRegex,
+            "//# sourceMappingURL=" + path.basename(sourceMappingUrl.pathname));
+    }
+&nbsp;
+    /**
+     * Given an absolute source path, this method does two things:
+     * 1. It changes the path from absolute to be relative to the sourcesRootPath parameter.
+     * 2. It changes the path separators to Unix style.
+     */
+    private <span class="fstat-no" title="function not covered" >updateSourceMapPath(sourcePath: string, sourcesRootPath: string, packagerRemoteRoot?: string, packagerLocalRoot?: string)</span> {
+<span class="cstat-no" title="statement not covered" >        if (packagerRemoteRoot &amp;&amp; packagerLocalRoot) {</span>
+<span class="cstat-no" title="statement not covered" ></span>            packagerRemoteRoot = this.makeUnixStylePath(packagerRemoteRoot);
+<span class="cstat-no" title="statement not covered" ></span>            packagerLocalRoot = this.makeUnixStylePath(packagerLocalRoot);
+<span class="cstat-no" title="statement not covered" ></span>            sourcePath = sourcePath.replace(packagerRemoteRoot, packagerLocalRoot);
+        }
+<span class="cstat-no" title="statement not covered" ></span>        let relativeSourcePath = path.relative(sourcesRootPath, sourcePath);
+<span class="cstat-no" title="statement not covered" ></span>        return this.makeUnixStylePath(relativeSourcePath);
+    }
+&nbsp;
+    /**
+     * Visual Studio Code source mapping requires Unix style path separators.
+     * This method replaces all back-slash characters in a given string with forward-slash ones.
+     */
+    private <span class="fstat-no" title="function not covered" >makeUnixStylePath(p: string)</span>: string {
+<span class="cstat-no" title="statement not covered" ></span>        let pathArgs = p.split(path.sep);
+<span class="cstat-no" title="statement not covered" ></span>        return path.posix.join.apply(null, pathArgs);
+    }
+&nbsp;
+    /**
+     * Parses the body of a script searching for a source map URL.
+     * It supports the following source map url styles:
+     *  //# sourceMappingURL=path/to/source/map
+     *  //@ sourceMappingURL=path/to/source/map
+     *
+     * Returns the first match if found, null otherwise.
+     */
+    private <span class="fstat-no" title="function not covered" >getSourceMapRelativeUrl(body: string)</span> {
+<span class="cstat-no" title="statement not covered" ></span>        let match = body.match(SourceMapUtil.SourceMapURLRegex);
+        // If match is null, the body doesn't contain the source map
+<span class="cstat-no" title="statement not covered" ></span>        return match ? match[2] : null;
+    }
+&nbsp;
+&nbsp;
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed May 15 2019 11:35:12 GMT+0000 (Coordinated Universal Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+{
+	"name": "terminal-tabs",
+	"displayName": "Terminal Tabs",
+	"description": "Adds tabs for each terminal process to the status bar",
+	"version": "0.2.0",
+	"preview": true,
+	"publisher": "Tyriar",
+	"icon": "images/icon.png",
+	"bugs": {
+		"url": "https://github.com/Tyriar/vscode-terminal-tabs/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Tyriar/vscode-terminal-tabs"
+	},
+	"engines": {
+		"vscode": "^1.22.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:terminalTabs.createTerminal",
+		"onCommand:terminalTabs.createNamedTerminal"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "terminalTabs.createTerminal",
+				"title": "Terminal Tabs: Create terminal"
+			},
+			{
+				"command": "terminalTabs.createNamedTerminal",
+				"title": "Terminal Tabs: Create named terminal"
+			},
+			{
+				"command": "terminalTabs.showTerminal1",
+				"title": "Terminal Tabs: Show terminal #1"
+			},
+			{
+				"command": "terminalTabs.showTerminal2",
+				"title": "Terminal Tabs: Show terminal #2"
+			},
+			{
+				"command": "terminalTabs.showTerminal3",
+				"title": "Terminal Tabs: Show terminal #3"
+			},
+			{
+				"command": "terminalTabs.showTerminal4",
+				"title": "Terminal Tabs: Show terminal #4"
+			},
+			{
+				"command": "terminalTabs.showTerminal5",
+				"title": "Terminal Tabs: Show terminal #5"
+			},
+			{
+				"command": "terminalTabs.showTerminal6",
+				"title": "Terminal Tabs: Show terminal #6"
+			},
+			{
+				"command": "terminalTabs.showTerminal7",
+				"title": "Terminal Tabs: Show terminal #7"
+			},
+			{
+				"command": "terminalTabs.showTerminal8",
+				"title": "Terminal Tabs: Show terminal #8"
+			},
+			{
+				"command": "terminalTabs.showTerminal9",
+				"title": "Terminal Tabs: Show terminal #9"
+			},
+			{
+				"command": "terminalTabs.showTerminal10",
+				"title": "Terminal Tabs: Show terminal #10"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "tslint './src/**/*.ts'",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.32",
+		"@types/node": "^6.0.40",
+		"mocha": "^2.3.3",
+		"tslint": "^5.10.0",
+		"typescript": "^2.8.3",
+		"vscode": "^1.0.0"
+	},
+	"__metadata": {
+		"id": "0b2bcf1a-3630-47ec-9718-e153b0695f17",
+		"publisherId": "738ff3bb-8e77-45d5-bd26-7c9ad62959b9",
+		"publisherDisplayName": "Daniel Imms"
+	}
+}

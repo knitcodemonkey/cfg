@@ -57,7 +57,8 @@
         # Status/Logging
         s = status
         ss = status -sb
-        hist = log --graph --pretty=custom           # Show custom graph
+        # hist = log --graph --pretty=custom           # Show custom graph
+        hist = log --graph --pretty=format:'%Cred%h%Creset %Cblue(%an)%Creset - %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
         l = log --pretty=custom                      # Show custom log
         ll = log --stat --abbrev-commit
         lc = shortlog --summary --numbered           # List contributors
