@@ -15,7 +15,9 @@
 #
 #  ---------------------------------------------------------------------------
 
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
+  . `brew --prefix`/etc/bash_completion.d/git-completion.bash
+fi
 
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases

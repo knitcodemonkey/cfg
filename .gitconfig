@@ -186,7 +186,7 @@
         editor = nano
         abbrev = 12
         attributesfile = ~/.gitattributes
-        excludesfile = ~/.gitignore
+	excludesfile = /Users/jen/.gitignore
         autocrlf = input
         mergeoptions = --no-edit
         ignorecase = false
@@ -257,4 +257,10 @@
         prune = true
 [user]
 	name = Jen Luker
-	email = jluker@deseretdigital.com
+	email = jen@gremlin.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
