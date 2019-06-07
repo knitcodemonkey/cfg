@@ -116,7 +116,7 @@ config push
 Again as a shortcut not to have to remember all these steps on any new machine you want to setup, you can create a simple script, store it as Bitbucket snippet like I did, create a short url for it and call it like this:
 
 ```sh
-curl -Lks http://bit.do/cfg-install | /bin/bash
+curl -Lks shorturl.at/bilsM | /bin/bash
 ```
 
 For completeness this is what I ended up with (tested on many freshly minted Alpine Linux containers to test it out):
