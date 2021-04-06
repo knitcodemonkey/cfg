@@ -1,0 +1,1 @@
+for mysource in /Users/jenluker/sandbox/kube-users/bash_scripts/*.sh; do source ${mysource}; done
